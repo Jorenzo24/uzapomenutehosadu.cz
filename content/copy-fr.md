@@ -2,7 +2,7 @@
 
 Langue de travail. Le tchèque (racine `/`) et l'anglais (`/en/`) seront traduits depuis ce fichier.
 Mots-clés : l'équivalent français est placé là où le mot-clé tchèque prendra sa place (indiqué entre crochets `{cz: ...}`).
-Les passages `[À CONFIRMER AVEC LA CLIENTE]` sont listés dans `content/a-confirmer.md`.
+Les passages `[À CONFIRMER]` sont listés dans `content/a-confirmer.md`.
 
 Distances par la route depuis le terrain : calcul OpenStreetMap (OSRM), arrondies. Temps vers Prague et l'aéroport : donnés par la cliente.
 
@@ -93,12 +93,12 @@ Consigne : Survolez ou touchez un terrain pour voir sa surface.
 
 Fiche terrain (au clic) :
 - Terrain n° X
-- Surface : 500 à 550 m² [surface exacte À CONFIRMER AVEC LA CLIENTE]
+- Surface : 500 à 550 m² [surface exacte À CONFIRMER]
 - Statut : ouverture des ventes début 2027
 - Prix : sur demande
 - Bouton : Je suis intéressé par ce terrain
 
-Note sous le plan : Plan schématique, non contractuel. Position du terrain de 1 200 m² [À CONFIRMER AVEC LA CLIENTE].
+Note sous le plan : Plan schématique, non contractuel. Position du terrain de 1 200 m² [À CONFIRMER].
 
 ---
 
@@ -261,7 +261,7 @@ Label : 10 · Questions
    Les prix seront communiqués à l'ouverture des ventes. Ils dépendent des travaux de viabilisation en cours. Prix sur demande via le formulaire.
 
 3. **Peut-on acheter le terrain seul ?**
-   [À CONFIRMER AVEC LA CLIENTE]
+   [À CONFIRMER]
 
 4. **Où en est le permis de construire ?**
    Le permis de construire des maisons est en cours d'instruction. Les retours des organismes consultés sont attendus au printemps 2027.
@@ -276,13 +276,13 @@ Label : 10 · Questions
    La maison est livrée sous un an après la signature du contrat de construction. Les éléments sont préfabriqués en atelier.
 
 8. **Peut-on acheter deux terrains voisins ?**
-   [À CONFIRMER AVEC LA CLIENTE]
+   [À CONFIRMER]
 
 9. **Quels frais prévoir en plus du prix ?**
-   Frais de notaire ou d'avocat pour les contrats, frais d'inscription au cadastre, frais de dossier bancaire. [Montants À CONFIRMER AVEC LA CLIENTE]
+   Frais de notaire ou d'avocat pour les contrats, frais d'inscription au cadastre, frais de dossier bancaire. [Montants À CONFIRMER]
 
 10. **Quelle TVA s'applique ?**
-    [À CONFIRMER AVEC LA CLIENTE : taux sur le terrain et sur la maison]
+    [À CONFIRMER : taux sur le terrain et sur la maison]
 
 11. **Comment financer l'achat ?**
     Par un prêt immobilier auprès de votre banque. Nous fournissons les documents du projet nécessaires au dossier.
@@ -329,7 +329,7 @@ Messages d'erreur :
 
 - U zapomenutého sadu · Au verger oublié
 - Dřetovice, district de Kladno, Bohême centrale
-- Un projet de La Maison du Bonheur [entité juridique À CONFIRMER AVEC LA CLIENTE]
+- Un projet de La Maison du Bonheur [entité juridique À CONFIRMER]
 - Mentions légales · Confidentialité
 - Langue : CZ · EN · FR
 - © 2026 U zapomenutého sadu

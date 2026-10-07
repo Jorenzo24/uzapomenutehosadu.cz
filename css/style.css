@@ -255,18 +255,31 @@ main > section:not(.hero):not(.figures) { content-visibility: auto; contain-intr
 @media (min-width: 960px) { .hero__caption { display: block; } }
 
 /* ---------- 2. Chiffres clés ---------- */
-.figures { padding-block: clamp(4rem, 3rem + 5vw, 8rem); }
+/* Panneau brun à gauche (pleine hauteur, jusqu'au bord), chiffres à droite */
+.figures { display: grid; }
+.figures__lead {
+    background: linear-gradient(160deg, #6a4e3a 0%, var(--c-earth) 55%, #4d382a 100%);
+    color: var(--c-paper);
+    display: flex; align-items: center;
+    padding: clamp(3rem, 2rem + 5vw, 6rem) var(--gutter);
+}
+.figures__rest { padding: clamp(3rem, 2rem + 5vw, 7rem) var(--gutter); }
 .figures__grid { display: grid; gap: var(--sp-5) var(--sp-4); grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .figure { display: flex; flex-direction: column; gap: 0.35rem; }
 .figure__value { font-family: var(--f-serif); font-weight: 300; font-size: clamp(2.6rem, 1.8rem + 3vw, 4.4rem); line-height: 0.95; color: var(--c-ink); letter-spacing: -0.03em; font-variant-numeric: lining-nums; }
 .figure__value small { font-size: 0.42em; letter-spacing: 0; margin-left: 0.1em; color: var(--c-taupe); }
 .figure__label { font-size: var(--fs-sm); color: var(--c-muted); max-width: 16rem; }
-.figure--hero { grid-column: 1 / -1; }
-.figure--hero .figure__value { font-size: var(--fs-display); color: var(--c-copper); }
-.figures__note { margin-top: var(--sp-5); }
+.figure--hero .figure__value { font-size: clamp(7rem, 4rem + 12vw, 13rem); color: #e8c3a0; }
+.figure--hero .figure__label { color: rgba(251, 248, 243, 0.88); font-size: var(--fs-lg); line-height: 1.35; max-width: 13rem; margin-top: var(--sp-2); }
 @media (min-width: 760px) {
-    .figures__grid { grid-template-columns: 1.4fr 1fr 1fr 1fr; align-items: end; }
-    .figure--hero { grid-column: 1; grid-row: 1 / span 2; align-self: center; }
+    .figures__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--sp-6) var(--sp-4); }
+}
+@media (min-width: 960px) {
+    /* La colonne brune s'étend du bord gauche de l'écran jusqu'au début de la grille */
+    .figures { grid-template-columns: calc((100vw - min(100vw, var(--max))) / 2 + 22rem) 1fr; }
+    .figures__lead { padding-left: max(var(--gutter), calc((100vw - var(--max)) / 2 + var(--gutter))); padding-right: var(--sp-5); }
+    .figures__rest { display: flex; align-items: center; padding-left: var(--sp-6); padding-right: max(var(--gutter), calc((100vw - var(--max)) / 2 + var(--gutter))); }
+    .figures__grid { width: 100%; }
 }
 
 /* ---------- 3. Avancement ---------- */

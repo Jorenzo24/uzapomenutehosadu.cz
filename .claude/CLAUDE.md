@@ -33,7 +33,7 @@ Cliente : Katerina, société « La Maison du Bonheur ».
 - Statuts exacts : viabilisation en cours, permis en cours d'instruction, lancement des ventes prévu début 2027.
 - Aucun rendu de maison simulé : placeholders SVG uniquement.
 - District = Kladno, jamais Praha-západ.
-- Infos manquantes : `[À CONFIRMER AVEC LA CLIENTE]`, listées dans `content/a-confirmer.md`.
+- Infos manquantes : `[À CONFIRMER]`, listées dans `content/a-confirmer.md`.
 
 ## SEO
 - Un seul H1. Title 55-60 car., meta description 150-155 car., OG complet, canonical.

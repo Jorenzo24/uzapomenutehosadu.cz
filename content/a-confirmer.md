@@ -1,6 +1,6 @@
 # Questions à poser à la cliente
 
-Liste tenue à jour pendant le développement. Chaque point correspond à un `[À CONFIRMER AVEC LA CLIENTE]` ou `[CONTACT À CONFIRMER]` dans le site.
+Liste tenue à jour pendant le développement. Chaque point correspond à un `[À CONFIRMER]` ou `[CONTACT À CONFIRMER]` dans le site.
 
 ## Contact et juridique
 - [ ] E-mail qui reçoit les demandes du formulaire (`contact.php`, constante `LEAD_TO`)
