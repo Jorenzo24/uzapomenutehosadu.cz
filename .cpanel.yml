@@ -1,13 +1,16 @@
 ---
 deployment:
   tasks:
-    # TODO: remplacer CPANEL_USERNAME_A_CONFIRMER par le username cPanel
+    # TODO : remplacer CPANEL_USERNAME_A_CONFIRMER par le username cPanel
     - export DEPLOYPATH=/home/CPANEL_USERNAME_A_CONFIRMER/public_html/
+    - /bin/mkdir -p $DEPLOYPATH/assets/images $DEPLOYPATH/data
     - /bin/cp -R css $DEPLOYPATH
     - /bin/cp -R js $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp 404.html $DEPLOYPATH
-    - /bin/cp .htaccess $DEPLOYPATH
-    - /bin/cp robots.txt $DEPLOYPATH
-    - /bin/cp sitemap.xml $DEPLOYPATH
+    - /bin/cp -R assets/fonts assets/icons $DEPLOYPATH/assets/
+    # Images optimisées uniquement (pas le dossier raw/)
+    - /bin/find assets/images -maxdepth 1 -type f -exec /bin/cp {} $DEPLOYPATH/assets/images/ \;
+    - /bin/cp -R dretovice comment-acheter mentions-legales confidentialite merci $DEPLOYPATH
+    - /bin/cp index.html 404.html contact.php $DEPLOYPATH
+    - /bin/cp .htaccess robots.txt sitemap.xml $DEPLOYPATH
+    # Dossier de repli des leads, protégé (le CSV va d'abord dans ~/leads, hors public_html)
+    - /bin/cp data/.htaccess $DEPLOYPATH/data/

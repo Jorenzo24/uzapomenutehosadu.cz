@@ -7,3 +7,7 @@ Thumbs.db
 node_modules/
 *.bak
 *.old
+
+# Leads (repli si le dossier hors public_html est indisponible)
+data/*
+!data/.htaccess

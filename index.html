@@ -3,28 +3,764 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Dev : ne pas indexer la version française provisoire -->
+    <!-- DEV : version française provisoire, ne pas indexer. Retirer à la mise en ligne tchèque. -->
     <meta name="robots" content="noindex, nofollow">
     <title>Maisons neuves et terrains à Dřetovice, 15 min de Prague</title>
-    <meta name="description" content="U zapomenutého sadu : 7 terrains et maisons d'architecte d'environ 150 m² à Dřetovice, district de Kladno. Lancement des ventes prévu début 2027.">
+    <meta name="description" content="7 terrains à bâtir et maisons d'architecte d'environ 150 m² à Dřetovice, district de Kladno, à 15 minutes de Prague. Lancement des ventes prévu début 2027.">
     <link rel="canonical" href="https://uzapomenutehosadu.cz/">
+    <!-- hreflang à activer avec les versions tchèque et anglaise :
+    <link rel="alternate" hreflang="cs" href="https://uzapomenutehosadu.cz/">
+    <link rel="alternate" hreflang="en" href="https://uzapomenutehosadu.cz/en/">
+    <link rel="alternate" hreflang="x-default" href="https://uzapomenutehosadu.cz/">
+    -->
     <meta property="og:title" content="U zapomenutého sadu, maisons neuves et terrains à Dřetovice">
-    <meta property="og:description" content="7 terrains et maisons d'architecte d'environ 150 m² à Dřetovice, 15 minutes de Prague. Lancement des ventes prévu début 2027.">
+    <meta property="og:description" content="7 terrains et maisons d'architecte d'environ 150 m² en bordure d'un verger protégé, à 15 minutes de Prague. Lancement des ventes prévu début 2027.">
     <meta property="og:image" content="https://uzapomenutehosadu.cz/assets/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Vue aérienne du verger en fleurs, du terrain et du village de Dřetovice">
     <meta property="og:url" content="https://uzapomenutehosadu.cz/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="U zapomenutého sadu">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#f7f2ea">
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css?v=20261007a">
+    <link rel="preload" href="assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/hanken-grotesk-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="image" type="image/webp"
+          imagesrcset="assets/images/dretovice-verger-fleuri-village-eglise-640.webp 640w, assets/images/dretovice-verger-fleuri-village-eglise-1024.webp 1024w, assets/images/dretovice-verger-fleuri-village-eglise-1600.webp 1600w"
+          imagesizes="100vw" fetchpriority="high">
+    <link rel="stylesheet" href="css/style.css?v=20261007b">
+    <script>document.documentElement.classList.add('js');</script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://uzapomenutehosadu.cz/#organization",
+          "name": "La Maison du Bonheur",
+          "url": "https://uzapomenutehosadu.cz/",
+          "logo": "https://uzapomenutehosadu.cz/assets/icons/favicon.svg",
+          "sameAs": ["https://www.youtube.com/@uzapomenutehosadu"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://uzapomenutehosadu.cz/#website",
+          "url": "https://uzapomenutehosadu.cz/",
+          "name": "U zapomenutého sadu",
+          "inLanguage": "fr",
+          "publisher": { "@id": "https://uzapomenutehosadu.cz/#organization" }
+        },
+        {
+          "@type": "Place",
+          "@id": "https://uzapomenutehosadu.cz/#place",
+          "name": "U zapomenutého sadu, Dřetovice",
+          "description": "7 terrains à bâtir en bordure d'un ancien verger classé biocorridor, orientés au sud.",
+          "geo": { "@type": "GeoCoordinates", "latitude": 50.1838484, "longitude": 14.2026591 },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dřetovice",
+            "addressRegion": "Středočeský kraj",
+            "addressCountry": "CZ"
+          },
+          "containedInPlace": {
+            "@type": "AdministrativeArea",
+            "name": "Okres Kladno",
+            "containedInPlace": { "@type": "AdministrativeArea", "name": "Středočeský kraj" }
+          },
+          "hasMap": "https://mapy.com/s/nogukezeka"
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://uzapomenutehosadu.cz/#terrains",
+          "name": "Terrains à bâtir et maisons U zapomenutého sadu",
+          "numberOfItems": 7,
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "item": { "@type": "Product", "name": "Terrain 1 avec maison d'environ 150 m²", "category": "Terrain à bâtir et maison individuelle", "additionalProperty": [{ "@type": "PropertyValue", "name": "Surface du terrain", "value": "500 à 550", "unitCode": "MTK" }, { "@type": "PropertyValue", "name": "Surface habitable", "value": 150, "unitCode": "MTK" }], "offers": { "@type": "Offer", "availability": "https://schema.org/PreOrder", "availabilityStarts": "2027-01", "seller": { "@id": "https://uzapomenutehosadu.cz/#organization" } } } },
+            { "@type": "ListItem", "position": 2, "item": { "@type": "Product", "name": "Terrain 2 avec maison d'environ 150 m²", "category": "Terrain à bâtir et maison individuelle", "additionalProperty": [{ "@type": "PropertyValue", "name": "Surface du terrain", "value": "500 à 550", "unitCode": "MTK" }, { "@type": "PropertyValue", "name": "Surface habitable", "value": 150, "unitCode": "MTK" }], "offers": { "@type": "Offer", "availability": "https://schema.org/PreOrder", "availabilityStarts": "2027-01", "seller": { "@id": "https://uzapomenutehosadu.cz/#organization" } } } },
+            { "@type": "ListItem", "position": 3, "item": { "@type": "Product", "name": "Terrain 3 avec maison d'environ 150 m²", "category": "Terrain à bâtir et maison individuelle", "additionalProperty": [{ "@type": "PropertyValue", "name": "Surface du terrain", "value": "500 à 550", "unitCode": "MTK" }, { "@type": "PropertyValue", "name": "Surface habitable", "value": 150, "unitCode": "MTK" }], "offers": { "@type": "Offer", "availability": "https://schema.org/PreOrder", "availabilityStarts": "2027-01", "seller": { "@id": "https://uzapomenutehosadu.cz/#organization" } } } },
+            { "@type": "ListItem", "position": 4, "item": { "@type": "Product", "name": "Terrain 4 avec maison d'environ 150 m²", "category": "Terrain à bâtir et maison individuelle", "additionalProperty": [{ "@type": "PropertyValue", "name": "Surface du terrain", "value": "500 à 550", "unitCode": "MTK" }, { "@type": "PropertyValue", "name": "Surface habitable", "value": 150, "unitCode": "MTK" }], "offers": { "@type": "Offer", "availability": "https://schema.org/PreOrder", "availabilityStarts": "2027-01", "seller": { "@id": "https://uzapomenutehosadu.cz/#organization" } } } },
+            { "@type": "ListItem", "position": 5, "item": { "@type": "Product", "name": "Terrain 5 avec maison d'environ 150 m²", "category": "Terrain à bâtir et maison individuelle", "additionalProperty": [{ "@type": "PropertyValue", "name": "Surface du terrain", "value": "500 à 550", "unitCode": "MTK" }, { "@type": "PropertyValue", "name": "Surface habitable", "value": 150, "unitCode": "MTK" }], "offers": { "@type": "Offer", "availability": "https://schema.org/PreOrder", "availabilityStarts": "2027-01", "seller": { "@id": "https://uzapomenutehosadu.cz/#organization" } } } },
+            { "@type": "ListItem", "position": 6, "item": { "@type": "Product", "name": "Terrain 6 avec maison d'environ 150 m²", "category": "Terrain à bâtir et maison individuelle", "additionalProperty": [{ "@type": "PropertyValue", "name": "Surface du terrain", "value": "500 à 550", "unitCode": "MTK" }, { "@type": "PropertyValue", "name": "Surface habitable", "value": 150, "unitCode": "MTK" }], "offers": { "@type": "Offer", "availability": "https://schema.org/PreOrder", "availabilityStarts": "2027-01", "seller": { "@id": "https://uzapomenutehosadu.cz/#organization" } } } },
+            { "@type": "ListItem", "position": 7, "item": { "@type": "Product", "name": "Terrain 7 avec maison d'environ 150 m²", "category": "Terrain à bâtir et maison individuelle", "additionalProperty": [{ "@type": "PropertyValue", "name": "Surface du terrain", "value": 1200, "unitCode": "MTK" }, { "@type": "PropertyValue", "name": "Surface habitable", "value": 150, "unitCode": "MTK" }], "offers": { "@type": "Offer", "availability": "https://schema.org/PreOrder", "availabilityStarts": "2027-01", "seller": { "@id": "https://uzapomenutehosadu.cz/#organization" } } } }
+          ]
+        },
+        {
+          "@type": "VideoObject",
+          "name": "Pozemky U zapomenutého sadu",
+          "description": "Vue aérienne par drone des terrains, du verger et du village de Dřetovice.",
+          "thumbnailUrl": "https://i.ytimg.com/vi/Wz2ksQx2TcQ/hqdefault.jpg",
+          "uploadDate": "2021-05-31T09:42:20-07:00",
+          "duration": "PT27S",
+          "contentUrl": "https://www.youtube.com/watch?v=Wz2ksQx2TcQ",
+          "embedUrl": "https://www.youtube-nocookie.com/embed/Wz2ksQx2TcQ"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "U zapomenutého sadu", "item": "https://uzapomenutehosadu.cz/" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "Quand pourra-t-on acheter ?", "acceptedAnswer": { "@type": "Answer", "text": "Le lancement des ventes est prévu début 2027. La date exacte dépend du raccordement électrique. Les personnes inscrites via le formulaire sont prévenues en premier." } },
+            { "@type": "Question", "name": "Quel est le prix ?", "acceptedAnswer": { "@type": "Answer", "text": "Les prix seront communiqués à l'ouverture des ventes. Ils dépendent des travaux de viabilisation en cours. Prix sur demande via le formulaire." } },
+            { "@type": "Question", "name": "Où en est le permis de construire ?", "acceptedAnswer": { "@type": "Answer", "text": "Le permis de construire des maisons est en cours d'instruction. Les retours des organismes consultés sont attendus au printemps 2027." } },
+            { "@type": "Question", "name": "Les terrains sont-ils viabilisés ?", "acceptedAnswer": { "@type": "Answer", "text": "La viabilisation est en cours : eau, électricité et tout-à-l'égout. La date du raccordement électrique dépend du gestionnaire de réseau." } },
+            { "@type": "Question", "name": "Peut-on modifier le plan de la maison ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Vous choisissez entre une disposition 4+kk et 5+kk, et entre deux ou trois salles de bains. L'aménagement intérieur se règle avec le constructeur avant la signature du contrat de construction." } },
+            { "@type": "Question", "name": "Combien de temps dure la construction ?", "acceptedAnswer": { "@type": "Answer", "text": "La maison est livrée sous un an après la signature du contrat de construction. Les éléments sont préfabriqués en atelier puis montés sur le terrain." } },
+            { "@type": "Question", "name": "Comment financer l'achat ?", "acceptedAnswer": { "@type": "Answer", "text": "Par un prêt immobilier auprès de votre banque ou de votre courtier. Nous fournissons les documents du projet nécessaires au dossier." } }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
-    <header></header>
-    <main>
-        <h1>Maisons neuves et terrains à bâtir à Dřetovice, à 15 minutes de Prague</h1>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header" id="top">
+        <div class="wrap">
+            <a class="brand" href="./">
+                <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="12.5" r="9" fill="currentColor" opacity=".18"/><circle cx="16" cy="12.5" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M16 21.5V29M16 24.5l-3.5-3M16 23l3-2.6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/><circle cx="12.5" cy="11" r="1.6" fill="currentColor"/><circle cx="18.8" cy="9.4" r="1.6" fill="currentColor"/><circle cx="17.6" cy="15" r="1.6" fill="currentColor"/></svg>
+                <span>U zapomenutého sadu<small>Dřetovice · Kladno</small></span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span>Menu</button>
+            <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+                <ul role="list">
+                    <li><a href="#avancement">Le projet</a></li>
+                    <li><a href="#terrains">Les terrains</a></li>
+                    <li><a href="#maisons">Les maisons</a></li>
+                    <li><a href="#lieu">Le lieu</a></li>
+                    <li><a href="#acheter">Acheter</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a class="btn" href="#contact">Être informé</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenu">
+
+        <!-- 1. HERO -->
+        <section class="hero" aria-labelledby="titre-principal">
+            <picture class="hero__media">
+                <source type="image/webp" srcset="assets/images/dretovice-verger-fleuri-village-eglise-640.webp 640w, assets/images/dretovice-verger-fleuri-village-eglise-1024.webp 1024w, assets/images/dretovice-verger-fleuri-village-eglise-1600.webp 1600w" sizes="100vw">
+                <img src="assets/images/dretovice-verger-fleuri-village-eglise-1024.jpg"
+                     srcset="assets/images/dretovice-verger-fleuri-village-eglise-640.jpg 640w, assets/images/dretovice-verger-fleuri-village-eglise-1024.jpg 1024w, assets/images/dretovice-verger-fleuri-village-eglise-1600.jpg 1600w" sizes="100vw"
+                     width="1600" height="1200" fetchpriority="high"
+                     alt="Vue aérienne en avril : le verger de mirabelliers en fleurs au premier plan, le terrain en cours de viabilisation, puis le village de Dřetovice et l'église Saint-Venceslas sur la colline">
+            </picture>
+            <div class="wrap hero__content">
+                <p class="hero__kicker">U zapomenutého sadu · <em>Au verger oublié</em></p>
+                <h1 id="titre-principal">Maisons neuves et terrains à bâtir à Dřetovice, <em>à 15 minutes de Prague</em></h1>
+                <p class="hero__sub">7 terrains en bordure d'un verger protégé. Sur chacun, une maison d'environ 150&nbsp;m² dessinée par un architecte pour ce terrain.</p>
+                <p class="status-pill"><i aria-hidden="true"></i>Lancement des ventes prévu début 2027</p>
+                <div class="hero__actions">
+                    <a class="btn btn--light" href="#contact">Être informé en priorité
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    <a class="link-arrow" href="#avancement">Voir l'avancement</a>
+                </div>
+            </div>
+            <p class="hero__caption">Le terrain en avril, vu depuis le verger. Au fond, le village et l'église Saint-Venceslas.</p>
+        </section>
+
+        <!-- 2. CHIFFRES CLÉS -->
+        <section class="figures bg-cream" aria-label="Le projet en chiffres">
+            <div class="wrap">
+                <div class="figures__grid">
+                    <div class="figure figure--hero reveal">
+                        <span class="figure__value">7</span>
+                        <span class="figure__label">terrains à bâtir, chacun avec sa maison</span>
+                    </div>
+                    <div class="figure reveal">
+                        <span class="figure__value">500<small>à 550&nbsp;m²</small></span>
+                        <span class="figure__label">six terrains</span>
+                    </div>
+                    <div class="figure reveal">
+                        <span class="figure__value">1&nbsp;200<small>m²</small></span>
+                        <span class="figure__label">un terrain</span>
+                    </div>
+                    <div class="figure reveal">
+                        <span class="figure__value">150<small>m²</small></span>
+                        <span class="figure__label">habitables environ, sur deux niveaux</span>
+                    </div>
+                    <div class="figure reveal">
+                        <span class="figure__value">4+kk</span>
+                        <span class="figure__label">ou 5+kk, disposition au choix</span>
+                    </div>
+                    <div class="figure reveal">
+                        <span class="figure__value">15<small>min</small></span>
+                        <span class="figure__label">jusqu'à la limite de Prague</span>
+                    </div>
+                    <div class="figure reveal">
+                        <span class="figure__value">13<small>min</small></span>
+                        <span class="figure__label">jusqu'à l'aéroport Václav Havel, sortie 9 de la D7</span>
+                    </div>
+                </div>
+                <p class="note figures__note">4+kk : quatre pièces et une cuisine ouverte sur le séjour.</p>
+            </div>
+        </section>
+
+        <!-- 3. AVANCEMENT -->
+        <section class="section bg-sand" id="avancement" aria-labelledby="t-avancement">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow"><b>01</b>Avancement</p>
+                    <h2 id="t-avancement">Où en est le projet : viabilisation et permis de construire</h2>
+                    <p>Cette frise est mise à jour à chaque étape franchie.</p>
+                </div>
+                <!-- Contenu généré depuis l'objet PROJECT_PROGRESS dans js/main.js -->
+                <ol class="timeline" id="timeline" role="list"></ol>
+                <noscript>
+                    <p>Viabilisation en cours. Permis de construire en cours d'instruction, retours attendus au printemps 2027. Lancement des ventes prévu début 2027. Livraison des maisons sous un an après la signature du contrat de construction.</p>
+                </noscript>
+                <div class="timeline-meta">
+                    <p class="note">Calendrier indicatif. Dernière mise à jour : <span id="timeline-updated">octobre 2026</span>.</p>
+                    <a class="link-arrow" href="#contact">Recevoir les prochaines étapes par e-mail</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PLAN DE SITUATION -->
+        <section class="section bg-paper" id="terrains" aria-labelledby="t-terrains">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow"><b>02</b>Les terrains</p>
+                    <h2 id="t-terrains">7 terrains à bâtir dans le district de Kladno</h2>
+                    <p>Six terrains de 500 à 550&nbsp;m² et un terrain de 1&nbsp;200&nbsp;m². Tous s'ouvrent au sud. Au nord, le verger. Côté rue, une impasse.</p>
+                </div>
+
+                <div class="plan">
+                    <div class="plan__map reveal">
+                        <div class="plan__scroll" tabindex="0" role="region" aria-label="Plan des terrains, défilable horizontalement">
+                        <svg class="plan__svg" id="plan-svg" viewBox="0 0 1000 640" role="group" aria-label="Plan schématique des 7 terrains. Sélectionnez un terrain pour voir sa surface.">
+                            <defs>
+                                <pattern id="trees" width="54" height="48" patternUnits="userSpaceOnUse">
+                                    <rect width="54" height="48" fill="#dde4ca"/>
+                                    <circle cx="13" cy="13" r="11" fill="#c4d1a5"/>
+                                    <circle cx="40" cy="36" r="12" fill="#c4d1a5"/>
+                                    <circle cx="9" cy="10" r="2.2" fill="#fbf8f3"/>
+                                    <circle cx="17" cy="16" r="1.8" fill="#fbf8f3"/>
+                                    <circle cx="36" cy="33" r="2.2" fill="#fbf8f3"/>
+                                    <circle cx="44" cy="39" r="1.8" fill="#fbf8f3"/>
+                                    <circle cx="44" cy="10" r="5" fill="#cfdab4"/>
+                                </pattern>
+                            </defs>
+
+                            <!-- Verger (nord) -->
+                            <path d="M40 40 Q 300 18 620 32 T 975 46 L 975 250 L 40 250 Z" fill="url(#trees)"/>
+                            <text class="lbl lbl--orchard" x="70" y="88">Verger · biocorridor non constructible</text>
+
+                            <!-- Nord -->
+                            <g transform="translate(935 96)" aria-hidden="true">
+                                <circle r="22" fill="#fbf8f3"/>
+                                <path d="M0 -14 L6 6 L0 2 L-6 6 Z" fill="#5b4332"/>
+                                <text x="0" y="-27" text-anchor="middle" class="lbl" style="letter-spacing:0">N</text>
+                            </g>
+
+                            <!-- Rue en impasse -->
+                            <path d="M 805 470 H 170 Q 82 470 62 560 L 50 640" fill="none" stroke="#e8dbc8" stroke-width="42" stroke-linecap="round"/>
+                            <text class="lbl" x="420" y="475">Impasse</text>
+                            <text class="lbl" x="78" y="625">Vers le village</text>
+
+                            <!-- Terrains -->
+                            <g class="lot" data-lot="1" tabindex="0" role="button" aria-label="Terrain 1, 500 à 550 m²"><rect x="100" y="262" width="112" height="180"/><text x="156" y="352" text-anchor="middle">1</text><text class="lot-area" x="156" y="378" text-anchor="middle">500 à 550 m²</text></g>
+                            <g class="lot" data-lot="2" tabindex="0" role="button" aria-label="Terrain 2, 500 à 550 m²"><rect x="212" y="262" width="112" height="180"/><text x="268" y="352" text-anchor="middle">2</text><text class="lot-area" x="268" y="378" text-anchor="middle">500 à 550 m²</text></g>
+                            <g class="lot" data-lot="3" tabindex="0" role="button" aria-label="Terrain 3, 500 à 550 m²"><rect x="324" y="262" width="112" height="180"/><text x="380" y="352" text-anchor="middle">3</text><text class="lot-area" x="380" y="378" text-anchor="middle">500 à 550 m²</text></g>
+                            <g class="lot" data-lot="4" tabindex="0" role="button" aria-label="Terrain 4, 500 à 550 m²"><rect x="436" y="262" width="112" height="180"/><text x="492" y="352" text-anchor="middle">4</text><text class="lot-area" x="492" y="378" text-anchor="middle">500 à 550 m²</text></g>
+                            <g class="lot" data-lot="5" tabindex="0" role="button" aria-label="Terrain 5, 500 à 550 m²"><rect x="548" y="262" width="112" height="180"/><text x="604" y="352" text-anchor="middle">5</text><text class="lot-area" x="604" y="378" text-anchor="middle">500 à 550 m²</text></g>
+                            <g class="lot" data-lot="6" tabindex="0" role="button" aria-label="Terrain 6, 500 à 550 m²"><rect x="660" y="262" width="112" height="180"/><text x="716" y="352" text-anchor="middle">6</text><text class="lot-area" x="716" y="378" text-anchor="middle">500 à 550 m²</text></g>
+                            <g class="lot" data-lot="7" tabindex="0" role="button" aria-label="Terrain 7, 1 200 m²"><path d="M772 262 H 970 V 520 H 830 Q 805 520 805 495 V 442 H 772 Z"/><text x="884" y="372" text-anchor="middle">7</text><text class="lot-area" x="884" y="398" text-anchor="middle">1 200 m²</text></g>
+
+                            <!-- Sud -->
+                            <text class="lbl" x="300" y="560">↓ Sud : vue sur la vallée, le village et l'église</text>
+                        </svg>
+                        </div>
+                        <p class="plan__hint note">Faites glisser le plan pour voir les 7 terrains.</p>
+                        <div class="plan__tooltip" id="plan-tooltip" role="status" aria-live="polite"></div>
+                        <p class="note" style="margin-top:1rem">Plan schématique, non contractuel. Position du terrain de 1&nbsp;200&nbsp;m² <span class="todo">[À CONFIRMER AVEC LA CLIENTE]</span>.</p>
+                    </div>
+
+                    <aside class="lot-card reveal" id="lot-card" aria-live="polite">
+                        <p class="eyebrow" style="margin-bottom:.5rem">Terrain</p>
+                        <p class="lot-card__num" id="lot-num">1</p>
+                        <dl>
+                            <dt>Surface</dt><dd id="lot-area">500 à 550 m²</dd>
+                            <dt>Maison</dt><dd>environ 150 m², 2 niveaux</dd>
+                            <dt>Statut</dt><dd id="lot-status">Ouverture des ventes début 2027</dd>
+                            <dt>Prix</dt><dd>Sur demande</dd>
+                        </dl>
+                        <a class="btn btn--primary" href="#contact" id="lot-cta" data-lot="1">Ce terrain m'intéresse
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                        <p class="note" style="margin-top:1rem">Surface exacte par terrain <span class="todo">[À CONFIRMER AVEC LA CLIENTE]</span></p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. LES MAISONS -->
+        <section class="section bg-warm" id="maisons" aria-labelledby="t-maisons">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow"><b>03</b>Les maisons</p>
+                    <h2 id="t-maisons">Des maisons d'architecte conçues pour ces terrains</h2>
+                    <p class="lead">L'architecte a dessiné les maisons pour ces sept terrains : leur taille, leur orientation au sud et la vue sur la vallée.</p>
+                </div>
+
+                <div class="houses">
+                    <div class="houses__visuals">
+                        <!-- Emplacements réservés aux esquisses de l'architecte. Aucun rendu simulé. -->
+                        <figure class="placeholder placeholder--tall reveal">
+                            <svg viewBox="0 0 300 400" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#c9ad8f" stroke-width="1" stroke-dasharray="4 6"><rect x="16" y="16" width="268" height="368"/><path d="M16 16 L284 384 M284 16 L16 384"/></g></svg>
+                            <figcaption><strong>Esquisses de l'architecte à venir</strong>Façade sud d'une maison type. Environ 150&nbsp;m² sur 2 niveaux. Format prévu 1200 × 1600&nbsp;px.</figcaption>
+                        </figure>
+                        <figure class="placeholder reveal">
+                            <svg viewBox="0 0 300 300" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#c9ad8f" stroke-width="1" stroke-dasharray="4 6"><rect x="16" y="16" width="268" height="268"/><path d="M16 16 L284 284 M284 16 L16 284"/></g></svg>
+                            <figcaption><strong>Plans à venir</strong>Rez-de-chaussée et étage, dispositions 4+kk et 5+kk. Format prévu 1200 × 1200&nbsp;px.</figcaption>
+                        </figure>
+                    </div>
+
+                    <div>
+                        <div class="house-spec reveal">
+                            <div><b>~150 m²</b><span>habitables</span></div>
+                            <div><b>2</b><span>niveaux</span></div>
+                            <div><b>2 ou 3</b><span>salles de bains</span></div>
+                            <div><b>2</b><span>places sous carport</span></div>
+                        </div>
+
+                        <div class="house-points" style="margin-top:var(--sp-5)">
+                            <article class="house-point reveal">
+                                <span class="house-point__n">a.</span>
+                                <div>
+                                    <h3>Une base commune</h3>
+                                    <ul>
+                                        <li>Environ 150&nbsp;m² habitables sur deux niveaux</li>
+                                        <li>Carport pour deux voitures et local de rangement attenant</li>
+                                        <li>Séjour ouvert sur le jardin</li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="house-point reveal">
+                                <span class="house-point__n">b.</span>
+                                <div>
+                                    <h3>Une disposition sur mesure</h3>
+                                    <p>Vous choisissez l'aménagement intérieur : 4+kk ou 5+kk, deux ou trois salles de bains. Une chambre de plus ou un bureau : le plan s'adapte avant la signature du contrat de construction.</p>
+                                </div>
+                            </article>
+                            <article class="house-point reveal">
+                                <span class="house-point__n">c.</span>
+                                <div>
+                                    <h3>Une construction rapide</h3>
+                                    <p>Les maisons sont préfabriquées en atelier puis montées sur le terrain. Le constructeur est une entreprise allemande présente en République tchèque depuis plus de 30 ans. Livraison sous un an après la signature du contrat de construction.</p>
+                                </div>
+                            </article>
+                            <article class="house-point reveal">
+                                <span class="house-point__n">d.</span>
+                                <div>
+                                    <h3>Pompe à chaleur et pré-équipements</h3>
+                                    <ul>
+                                        <li>Chauffage par pompe à chaleur</li>
+                                        <li>Pré-équipement pour panneaux photovoltaïques</li>
+                                        <li>Pré-équipement pour la climatisation</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. LE LIEU -->
+        <section id="lieu" aria-labelledby="t-lieu" class="bg-cream" style="padding-bottom:var(--sp-section)">
+            <figure class="place-photo">
+                <picture>
+                    <source type="image/webp" srcset="assets/images/parcelles-verger-vue-aerienne-verticale-640.webp 640w, assets/images/parcelles-verger-vue-aerienne-verticale-1024.webp 1024w, assets/images/parcelles-verger-vue-aerienne-verticale-1600.webp 1600w" sizes="100vw">
+                    <img src="assets/images/parcelles-verger-vue-aerienne-verticale-1024.jpg"
+                         srcset="assets/images/parcelles-verger-vue-aerienne-verticale-640.jpg 640w, assets/images/parcelles-verger-vue-aerienne-verticale-1024.jpg 1024w, assets/images/parcelles-verger-vue-aerienne-verticale-1600.jpg 1600w" sizes="100vw"
+                         width="1600" height="1200" loading="lazy" decoding="async"
+                         alt="Vue verticale par drone : le verger en fleurs, au sud la bande de terrain viabilisée et le chemin d'accès, à droite les premières maisons du village">
+                </picture>
+                <figcaption>Vue verticale en avril : le verger en fleurs et, au sud, la bande de terrain du projet.</figcaption>
+            </figure>
+            <div class="wrap">
+                <div class="place-intro">
+                    <div class="place-intro__card reveal">
+                        <p class="eyebrow"><b>04</b>Le lieu</p>
+                        <h2 id="t-lieu">En bordure d'un verger protégé, orienté plein sud</h2>
+                    </div>
+                </div>
+                <div class="place-facts">
+                    <article class="place-fact reveal">
+                        <span class="place-fact__k" aria-hidden="true">1990</span>
+                        <h3>Le verger oublié</h3>
+                        <p>Le verger qui borde les terrains est abandonné depuis 1990. Les mirabelliers y ont poussé librement. Il est classé biocorridor : on ne pourra jamais y construire. Votre jardin restera face à des arbres.</p>
+                    </article>
+                    <article class="place-fact reveal">
+                        <span class="place-fact__k" aria-hidden="true">Impasse</span>
+                        <h3>Une impasse, sans trafic de transit</h3>
+                        <p>La rue se termine au lotissement. Seuls les habitants y circulent.</p>
+                    </article>
+                    <article class="place-fact reveal">
+                        <span class="place-fact__k" aria-hidden="true">Sud</span>
+                        <h3>Vue sur la vallée et l'église</h3>
+                        <p>Les maisons sont orientées au sud. Depuis l'étage : la vallée de Dřetovice, le village et l'église Saint-Venceslas sur sa colline.</p>
+                    </article>
+                    <article class="place-fact reveal">
+                        <span class="place-fact__k" aria-hidden="true">13 min</span>
+                        <h3>Hors des couloirs aériens</h3>
+                        <p>L'aéroport est à 13 minutes en voiture. Les terrains sont en dehors des couloirs de décollage et d'atterrissage.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. ACCÈS -->
+        <section class="section bg-paper" id="acces" aria-labelledby="t-acces">
+            <div class="wrap">
+                <div class="access">
+                    <div>
+                        <div class="section-head reveal" style="margin-bottom:var(--sp-5)">
+                            <p class="eyebrow"><b>05</b>Accès</p>
+                            <h2 id="t-acces">Autoroute D7 sortie 9, aéroport à 13 minutes</h2>
+                        </div>
+                        <div class="access__modes">
+                            <div class="mode reveal">
+                                <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 20v-5l3-6h14l3 6v5M6 20h20v4H6zM9 24v2M23 24v2M6 15h20"/><circle cx="10" cy="20" r="0.5"/><circle cx="22" cy="20" r="0.5"/></svg>
+                                <div><h3>Voiture</h3><p>Autoroute D7, sortie 9. Limite de Prague en 15 minutes, aéroport Václav Havel en 13 minutes.</p></div>
+                            </div>
+                            <div class="mode reveal">
+                                <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="7" y="5" width="18" height="19" rx="2"/><path d="M7 15h18M10 24v3M22 24v3M11 20h1M20 20h1M11 8h10"/></svg>
+                                <div><h3>Bus</h3><p>Lignes vers Kladno, l'aéroport et Prague.</p></div>
+                            </div>
+                            <div class="mode reveal">
+                                <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="4" width="14" height="18" rx="3"/><path d="M9 14h14M12 22l-3 6M20 22l3 6M11 26h10M13 18h0M19 18h0"/></svg>
+                                <div><h3>Train</h3><p>Gare de Dřetovice sur la ligne Kladno-Kralupy nad Vltavou, avec correspondances vers Prague.</p></div>
+                            </div>
+                        </div>
+                        <ul class="distances reveal" aria-label="Distances par la route depuis le terrain">
+                            <li><span>Prague, Dejvice</span><b>22 km</b></li>
+                            <li><span>Kladno centre</span><b>11 km</b></li>
+                            <li><span>Kralupy nad Vltavou</span><b>14 km</b></li>
+                            <li><span>Stehelčeves</span><b>2 km</b></li>
+                        </ul>
+                        <p class="note" style="margin-top:.75rem">Distances par la route depuis le terrain, arrondies.</p>
+                    </div>
+
+                    <div class="reveal">
+                        <div class="map-facade" id="map">
+                            <svg class="map-facade__bg" viewBox="0 0 600 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g fill="none" stroke="#c9ad8f" stroke-width="1.2"><path d="M-20 380 C 120 330 220 360 330 300 S 520 220 640 240"/><path d="M-20 140 C 90 170 200 120 300 160 S 470 210 640 150" stroke-dasharray="2 7"/><path d="M180 -20 C 200 120 260 200 300 260 S 330 420 360 540"/><path d="M420 -20 C 410 80 450 160 520 200"/></g><g fill="#dfe6cf"><circle cx="270" cy="215" r="34"/><circle cx="318" cy="205" r="26"/></g></svg>
+                            <div class="map-facade__inner">
+                                <svg class="map-pin" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                                <p class="map-facade__coords">50,1838° N · 14,2027° E</p>
+                                <p>Dřetovice, district de Kladno. La carte est chargée depuis Mapy.com après votre clic.</p>
+                                <button class="btn btn--light" type="button" id="map-load"
+                                        data-src="https://mapy.com/fr/zakladni?source=coor&amp;id=14.2026591%2C50.1838484&amp;x=14.2026591&amp;y=50.1838484&amp;z=14&amp;frame=1">Afficher la carte</button>
+                            </div>
+                        </div>
+                        <div class="map-links">
+                            <a class="link-arrow" href="https://mapy.com/s/nogukezeka" target="_blank" rel="noopener">Ouvrir dans Mapy.com</a>
+                            <a class="link-arrow" href="dretovice/">Le village et l'accès en détail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. VIE QUOTIDIENNE -->
+        <section class="section bg-sand" id="quotidien" aria-labelledby="t-quotidien">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow"><b>06</b>Au quotidien</p>
+                    <h2 id="t-quotidien">École, commerces et médecins autour de Dřetovice</h2>
+                </div>
+                <div class="daily">
+                    <div class="daily__col daily__col--lead reveal">
+                        <h3>À Dřetovice <span>Sur place</span></h3>
+                        <ul>
+                            <li>École maternelle</li>
+                            <li>Terrain de football du TJ Sparta Dřetovice</li>
+                            <li>Pompiers volontaires</li>
+                            <li>Bibliothèque municipale</li>
+                            <li>Pub</li>
+                            <li>Étangs de pêche</li>
+                            <li>Vente directe chez des producteurs</li>
+                        </ul>
+                    </div>
+                    <div class="daily__col reveal">
+                        <h3>À Stehelčeves <span>2 km · bus direct</span></h3>
+                        <ul>
+                            <li>École primaire</li>
+                            <li>Supermarché BILLA</li>
+                            <li>Droguerie DM</li>
+                            <li>Animalerie SuperZoo</li>
+                            <li>Station-service</li>
+                            <li>Restaurant Popeyes</li>
+                        </ul>
+                    </div>
+                    <div class="daily__col reveal">
+                        <h3>Médecins</h3>
+                        <ul>
+                            <li>Brandýsek <em>5 km</em></li>
+                            <li>Buštěhrad <em>5 km</em></li>
+                            <li>Kladno <em>11 km</em></li>
+                        </ul>
+                    </div>
+                    <div class="daily__col reveal">
+                        <h3>Vétérinaires</h3>
+                        <ul>
+                            <li>Buštěhrad <em>5 km</em></li>
+                            <li>Středokluky <em>9 km</em></li>
+                            <li>Kladno <em>11 km</em></li>
+                        </ul>
+                    </div>
+                    <div class="daily__col reveal">
+                        <h3>Pour les enfants</h3>
+                        <ul>
+                            <li>Zoopark Zájezd <em>6 km</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. LE VILLAGE -->
+        <section class="section bg-cream" id="village" aria-labelledby="t-village">
+            <div class="wrap">
+                <div class="village">
+                    <div>
+                        <p class="eyebrow reveal"><b>07</b>Dřetovice</p>
+                        <h2 id="t-village" class="reveal">Dřetovice, un village de Bohême centrale</h2>
+                        <p class="village__year reveal">1233<span>Première mention écrite</span></p>
+                        <ul class="village__facts reveal">
+                            <li><b>467</b> habitants.</li>
+                            <li>L'église Saint-Venceslas domine le village depuis sa colline.</li>
+                            <li>Plusieurs étangs, au pied du village.</li>
+                            <li>Une gare sur la ligne Kladno-Kralupy nad Vltavou.</li>
+                            <li>District de Kladno, région de Bohême centrale.</li>
+                        </ul>
+                        <p style="margin-top:var(--sp-4)"><a class="link-arrow" href="dretovice/">Le village et l'accès en détail</a></p>
+                    </div>
+                    <figure class="village__photo reveal">
+                        <picture>
+                            <source type="image/webp" srcset="assets/images/dretovice-eglise-saint-venceslas-etang-640.webp 640w, assets/images/dretovice-eglise-saint-venceslas-etang-780.webp 780w" sizes="(min-width: 960px) 40vw, 100vw">
+                            <img src="assets/images/dretovice-eglise-saint-venceslas-etang-780.jpg" srcset="assets/images/dretovice-eglise-saint-venceslas-etang-640.jpg 640w, assets/images/dretovice-eglise-saint-venceslas-etang-780.jpg 780w" sizes="(min-width: 960px) 40vw, 100vw"
+                                 width="780" height="585" loading="lazy" decoding="async"
+                                 alt="Dřetovice vu du ciel : l'église Saint-Venceslas sur la colline, l'étang et la rue principale du village">
+                        </picture>
+                        <figcaption>L'église Saint-Venceslas sur sa colline et l'étang, au nord du village.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. VIDÉO -->
+        <section class="section bg-paper" id="video" aria-labelledby="t-video">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <p class="eyebrow"><b>08</b>Vue du ciel</p>
+                    <h2 id="t-video">Le terrain et le verger vus du ciel</h2>
+                </div>
+                <div class="video reveal" id="video-player">
+                    <picture>
+                        <source type="image/webp" srcset="assets/images/verger-parcelles-champs-dretovice-640.webp 640w, assets/images/verger-parcelles-champs-dretovice-1024.webp 1024w, assets/images/verger-parcelles-champs-dretovice-1600.webp 1600w" sizes="(min-width: 1240px) 1180px, 100vw">
+                        <img src="assets/images/verger-parcelles-champs-dretovice-1024.jpg" srcset="assets/images/verger-parcelles-champs-dretovice-640.jpg 640w, assets/images/verger-parcelles-champs-dretovice-1024.jpg 1024w, assets/images/verger-parcelles-champs-dretovice-1600.jpg 1600w" sizes="(min-width: 1240px) 1180px, 100vw"
+                             width="1600" height="1200" loading="lazy" decoding="async"
+                             alt="Vue aérienne : le verger en fleurs entouré de champs, le terrain du projet et le village à droite">
+                    </picture>
+                    <button class="video__btn" type="button" id="video-load" data-id="Wz2ksQx2TcQ" aria-label="Lancer la vidéo drone (YouTube, 27 secondes)">
+                        <span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></span>
+                        <span>Lancer la vidéo · 27 s</span>
+                    </button>
+                </div>
+                <p class="note video-note">La vidéo est chargée depuis YouTube après votre clic.</p>
+            </div>
+        </section>
+
+        <!-- 11. ACHETER -->
+        <section class="section bg-sand" id="acheter" aria-labelledby="t-acheter">
+            <div class="wrap">
+                <div class="buy">
+                    <div class="buy__intro">
+                        <div class="reveal">
+                            <p class="eyebrow"><b>09</b>Acheter</p>
+                            <h2 id="t-acheter">Acheter un terrain et faire construire sa maison</h2>
+                            <p style="margin-top:var(--sp-3)">Deux contrats, deux interlocuteurs.</p>
+                        </div>
+                        <div class="buy__parties reveal">
+                            <div class="party"><span>Le terrain</span><p>Vous l'achetez à La Maison du Bonheur.</p></div>
+                            <div class="party"><span>La maison</span><p>Vous signez le contrat de construction directement avec le constructeur.</p></div>
+                        </div>
+                    </div>
+                    <div>
+                        <ol class="buy-steps" role="list">
+                            <li class="reveal"><div><h3>Prise de contact</h3><p>Vous remplissez le formulaire. Nous vous informons dès l'ouverture des ventes.</p></div></li>
+                            <li class="reveal"><div><h3>Visite du terrain</h3><p>Sur rendez-vous, à Dřetovice.</p></div></li>
+                            <li class="reveal"><div><h3>Promesse de vente du terrain</h3><p>Elle réserve votre terrain.</p></div></li>
+                            <li class="reveal"><div><h3>Contrat de construction</h3><p>Signé avec le constructeur. Vous y fixez la disposition et les options de votre maison.</p></div></li>
+                            <li class="reveal"><div><h3>Inscription au cadastre</h3><p>Le terrain est enregistré à votre nom au cadastre en 3 mois environ.</p></div></li>
+                            <li class="reveal"><div><h3>Livraison de la maison</h3><p>Sous un an après la signature du contrat de construction.</p></div></li>
+                        </ol>
+                        <div class="finance reveal">
+                            <h3>Financement</h3>
+                            <p>Vous financez le terrain et la maison par votre banque ou votre courtier. Nous ne donnons pas de conseil en financement. Nous fournissons les documents du projet que demande la banque.</p>
+                        </div>
+                        <p style="margin-top:var(--sp-3)"><a class="link-arrow" href="comment-acheter/">Le processus d'achat en détail</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. FAQ -->
+        <section class="section bg-cream" id="faq" aria-labelledby="t-faq">
+            <div class="wrap">
+                <div class="faq">
+                    <div class="section-head reveal">
+                        <p class="eyebrow"><b>10</b>Questions</p>
+                        <h2 id="t-faq">Questions fréquentes</h2>
+                        <p>Une question absente de cette liste : <a href="#contact">écrivez-nous</a>.</p>
+                    </div>
+                    <div class="faq__list">
+                        <details class="reveal"><summary>Quand pourra-t-on acheter ?</summary><div><p>Le lancement des ventes est prévu début 2027. La date exacte dépend du raccordement électrique. Les personnes inscrites via le formulaire sont prévenues en premier.</p></div></details>
+                        <details class="reveal"><summary>Quel est le prix ?</summary><div><p>Les prix seront communiqués à l'ouverture des ventes. Ils dépendent des travaux de viabilisation en cours. Prix sur demande via le formulaire.</p></div></details>
+                        <details class="reveal"><summary>Peut-on acheter le terrain seul ?</summary><div><p><span class="todo">[À CONFIRMER AVEC LA CLIENTE]</span></p></div></details>
+                        <details class="reveal"><summary>Où en est le permis de construire ?</summary><div><p>Le permis de construire des maisons est en cours d'instruction. Les retours des organismes consultés sont attendus au printemps 2027.</p></div></details>
+                        <details class="reveal"><summary>Les terrains sont-ils viabilisés ?</summary><div><p>La viabilisation est en cours : eau, électricité et tout-à-l'égout. La date du raccordement électrique dépend du gestionnaire de réseau.</p></div></details>
+                        <details class="reveal"><summary>Peut-on modifier le plan de la maison ?</summary><div><p>Oui. Vous choisissez entre une disposition 4+kk et 5+kk, et entre deux ou trois salles de bains. L'aménagement intérieur se règle avec le constructeur avant la signature du contrat de construction.</p></div></details>
+                        <details class="reveal"><summary>Combien de temps dure la construction ?</summary><div><p>La maison est livrée sous un an après la signature du contrat de construction. Les éléments sont préfabriqués en atelier puis montés sur le terrain.</p></div></details>
+                        <details class="reveal"><summary>Peut-on acheter deux terrains voisins ?</summary><div><p><span class="todo">[À CONFIRMER AVEC LA CLIENTE]</span></p></div></details>
+                        <details class="reveal"><summary>Quels frais prévoir en plus du prix ?</summary><div><p>Frais d'avocat ou de notaire pour les contrats, frais d'inscription au cadastre, frais de dossier bancaire. <span class="todo">[Montants À CONFIRMER AVEC LA CLIENTE]</span></p></div></details>
+                        <details class="reveal"><summary>Quelle TVA s'applique ?</summary><div><p><span class="todo">[À CONFIRMER AVEC LA CLIENTE : taux sur le terrain et sur la maison]</span></p></div></details>
+                        <details class="reveal"><summary>Comment financer l'achat ?</summary><div><p>Par un prêt immobilier auprès de votre banque ou de votre courtier. Nous fournissons les documents du projet nécessaires au dossier.</p></div></details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13. FORMULAIRE -->
+        <section class="section bg-dawn" id="contact" aria-labelledby="t-contact">
+            <div class="wrap">
+                <div class="contact">
+                    <div class="reveal">
+                        <p class="eyebrow"><b>11</b>Contact</p>
+                        <h2 id="t-contact">Être informé en priorité de l'ouverture des ventes</h2>
+                        <ol class="reasons" role="list">
+                            <li>Vous recevez les prix et les plans avant leur publication.</li>
+                            <li>Vous choisissez votre terrain parmi les premiers.</li>
+                            <li>L'inscription ne vous engage à rien.</li>
+                        </ol>
+                        <div class="direct">
+                            <p>Téléphone</p>
+                            <strong><span class="todo">[CONTACT À CONFIRMER]</span></strong>
+                            <p style="margin-top:1rem">E-mail</p>
+                            <strong><span class="todo">[CONTACT À CONFIRMER]</span></strong>
+                        </div>
+                    </div>
+
+                    <form class="form reveal" id="lead-form" action="contact.php" method="post" novalidate>
+                        <div class="form-status" id="form-status" role="alert" hidden></div>
+
+                        <div class="row-2">
+                            <div class="field">
+                                <label for="f-nom">Nom</label>
+                                <input id="f-nom" name="nom" type="text" autocomplete="name" required maxlength="120">
+                                <p class="error" id="e-nom"></p>
+                            </div>
+                            <div class="field">
+                                <label for="f-email">E-mail</label>
+                                <input id="f-email" name="email" type="email" autocomplete="email" required maxlength="160">
+                                <p class="error" id="e-email"></p>
+                            </div>
+                        </div>
+                        <div class="row-2">
+                            <div class="field">
+                                <label for="f-tel">Téléphone <small>(facultatif)</small></label>
+                                <input id="f-tel" name="telephone" type="tel" autocomplete="tel" maxlength="40">
+                            </div>
+                            <div class="field">
+                                <label for="f-lot">Terrain qui vous intéresse <small>(facultatif)</small></label>
+                                <select id="f-lot" name="terrain">
+                                    <option value="">Pas encore de préférence</option>
+                                    <option value="1">Terrain 1</option>
+                                    <option value="2">Terrain 2</option>
+                                    <option value="3">Terrain 3</option>
+                                    <option value="4">Terrain 4</option>
+                                    <option value="5">Terrain 5</option>
+                                    <option value="6">Terrain 6</option>
+                                    <option value="7">Terrain 7 (1 200 m²)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <fieldset class="field">
+                            <legend>Ce qui vous intéresse <small>(plusieurs choix possibles)</small></legend>
+                            <div class="checks">
+                                <label class="check"><input type="checkbox" name="interets[]" value="terrain">Acheter un terrain près de Prague</label>
+                                <label class="check"><input type="checkbox" name="interets[]" value="maison">Acheter une maison près de Prague</label>
+                                <label class="check"><input type="checkbox" name="interets[]" value="neuf">Une construction neuve</label>
+                                <label class="check"><input type="checkbox" name="interets[]" value="un-an">Une livraison sous un an</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="field">
+                            <label for="f-msg">Message <small>(facultatif)</small></label>
+                            <textarea id="f-msg" name="message" maxlength="2000"></textarea>
+                        </div>
+
+                        <div class="hp" aria-hidden="true">
+                            <label for="f-site">Ne pas remplir</label>
+                            <input id="f-site" name="site_web" type="text" tabindex="-1" autocomplete="off">
+                        </div>
+                        <input type="hidden" name="t" id="f-t" value="">
+
+                        <div class="field">
+                            <label class="check check--consent"><input type="checkbox" name="consentement" value="1" id="f-consent" required>
+                                <span>J'accepte que mes données soient utilisées pour me recontacter au sujet de ce projet, selon la <a href="confidentialite/">politique de confidentialité</a>.</span></label>
+                            <p class="error" id="e-consent"></p>
+                        </div>
+
+                        <button class="btn btn--primary" type="submit">Envoyer ma demande
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>&copy; <span id="year">2026</span> U zapomenutého sadu. Tous droits réservés.</p>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <p class="serif">U zapomenutého sadu</p>
+                    <p>Au verger oublié. Dřetovice, district de Kladno, Bohême centrale.<br>Un projet de La Maison du Bonheur <span class="todo">[entité juridique À CONFIRMER]</span>.</p>
+                </div>
+                <ul class="footer-links" role="list">
+                    <li><a href="comment-acheter/">Comment acheter</a></li>
+                    <li><a href="dretovice/">Le village de Dřetovice</a></li>
+                    <li><a href="mentions-legales/">Mentions légales</a></li>
+                    <li><a href="confidentialite/">Confidentialité</a></li>
+                </ul>
+                <div>
+                    <p class="note" style="margin-bottom:.5rem">Langue</p>
+                    <ul class="lang" role="list">
+                        <li><span aria-disabled="true" title="Version tchèque en préparation">CZ</span></li>
+                        <li><span aria-disabled="true" title="Version anglaise en préparation">EN</span></li>
+                        <li><a href="./" aria-current="page" lang="fr">FR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2026</span> U zapomenutého sadu</p>
+                <p>Plan et descriptif non contractuels.</p>
+            </div>
+        </div>
     </footer>
-    <script src="js/main.js?v=20261007a" defer></script>
+
+    <script src="js/main.js?v=20261007b" defer></script>
 </body>
 </html>
