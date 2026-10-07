@@ -12,6 +12,12 @@ const PROJECT_PROGRESS = {
     updated: 'octobre 2026',
     steps: [
         {
+            title: 'Conception des maisons',
+            status: 'done',
+            label: 'Terminé',
+            text: "Dessinées par l'architecte pour ces sept terrains."
+        },
+        {
             title: 'Viabilisation des terrains',
             status: 'current',
             label: 'En cours',
@@ -21,7 +27,7 @@ const PROJECT_PROGRESS = {
             title: 'Permis de construire',
             status: 'current',
             label: 'En cours',
-            text: 'Pour les maisons dessinées par l\'architecte.'
+            text: "Pour les maisons dessinées par l'architecte."
         },
         {
             title: 'Ouverture des ventes',
@@ -29,6 +35,12 @@ const PROJECT_PROGRESS = {
             label: 'Prochainement',
             text: 'Les personnes inscrites sont informées en premier.',
             link: { href: '#contact', label: 'Être informé en priorité' }
+        },
+        {
+            title: 'Construction et livraison',
+            status: 'upcoming',
+            label: 'À venir',
+            text: 'Sous un an après la signature du contrat de construction.'
         }
     ]
 };

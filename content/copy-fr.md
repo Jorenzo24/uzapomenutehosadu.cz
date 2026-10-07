@@ -68,9 +68,11 @@ Label : 01 · Avancement
 
 Intro : Cette frise est mise à jour à chaque étape franchie.
 
-1. Viabilisation des terrains : en cours. Eau, électricité, tout-à-l'égout.
-2. Permis de construire : en cours. Pour les maisons dessinées par l'architecte.
-3. Ouverture des ventes : prochainement. Les personnes inscrites sont informées en premier. Lien : Être informé en priorité
+1. Conception des maisons : terminé. Dessinées par l'architecte pour ces sept terrains.
+2. Viabilisation des terrains : en cours. Eau, électricité, tout-à-l'égout.
+3. Permis de construire : en cours. Pour les maisons dessinées par l'architecte.
+4. Ouverture des ventes : prochainement. Les personnes inscrites sont informées en premier. Lien : Être informé en priorité
+5. Construction et livraison : à venir. Sous un an après la signature du contrat de construction.
 
 Mention : Dernière mise à jour : octobre 2026.
 
@@ -126,7 +128,7 @@ Les maisons sont préfabriquées en atelier puis montées sur le terrain. Le con
 - Pré-équipement pour panneaux photovoltaïques
 - Pré-équipement pour la climatisation
 
-Placeholder visuel : Esquisses de l'architecte à venir. Façade sud, maison type, environ 150 m² sur 2 niveaux.
+Illustration (image générée, provisoire) : Illustration d'ambiance générée par ordinateur, non contractuelle. Elle ne représente pas les maisons définitives. Les esquisses de l'architecte sont à venir.
 Placeholder visuel : Plans à venir. Rez-de-chaussée et étage, dispositions 4+kk et 5+kk.
 
 ---

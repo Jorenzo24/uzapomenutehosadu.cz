@@ -31,7 +31,8 @@ Cliente : Katerina, société « La Maison du Bonheur ».
 - Aucune mention de bois / ossature bois / dřevostavba.
 - Aucun prix : « sur demande » + formulaire.
 - Statuts exacts : viabilisation en cours, permis en cours d'instruction, ouverture des ventes « prochainement ». Aucune date affichée (ni ventes, ni permis).
-- Aucun rendu de maison simulé : placeholders SVG uniquement.
+- Visuels de maison : une seule illustration générée (ChatGPT) fournie et validée par Joseph, toujours accompagnée de la mention « illustration d'ambiance non contractuelle ». N'en générer aucune autre.
+- Tâches différées : `content/todo.md`.
 - District = Kladno, jamais Praha-západ.
 - Infos manquantes : `[À CONFIRMER]`, listées dans `content/a-confirmer.md`.
 

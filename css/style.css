@@ -306,9 +306,9 @@ main > section:not(.hero):not(.figures) { content-visibility: auto; contain-intr
 .step--current .step__status::before { content: ""; flex: none; transform: translateY(-1px); width: 7px; height: 7px; border-radius: 50%; background: var(--c-leaf); }
 .timeline-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--sp-2); margin-top: var(--sp-5); }
 @media (min-width: 960px) {
-    .timeline { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--sp-5); }
+    .timeline { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--sp-3); }
     .step { padding: 3.6rem 0 0 0; }
-    .step::before { left: 2.6rem; right: calc(-1 * var(--sp-5)); top: 1.05rem; bottom: auto; width: auto; height: 2px; background: linear-gradient(90deg, var(--c-clay), rgba(227, 211, 189, 0.3)); }
+    .step::before { left: 2.6rem; right: calc(-1 * var(--sp-3)); top: 1.05rem; bottom: auto; width: auto; height: 2px; background: linear-gradient(90deg, var(--c-clay), rgba(227, 211, 189, 0.3)); }
     .step--done::before { background: var(--c-earth); }
 }
 
@@ -361,6 +361,8 @@ main > section:not(.hero):not(.figures) { content-visibility: auto; contain-intr
 .placeholder figcaption { position: relative; max-width: 20rem; font-size: var(--fs-sm); }
 .placeholder figcaption strong { display: block; font-family: var(--f-serif); font-weight: 400; font-size: 1.35rem; margin-bottom: 0.4rem; }
 .placeholder--tall { aspect-ratio: 3 / 4; }
+.house-illustration img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.house-illustration figcaption { margin-top: 0.6rem; font-size: var(--fs-xs); color: var(--c-muted); max-width: 30rem; }
 .house-points { display: grid; gap: var(--sp-5); }
 .house-point { display: grid; grid-template-columns: 3rem 1fr; gap: 0 var(--sp-2); }
 .house-point__n { font-family: var(--f-serif); font-size: 1.1rem; color: var(--c-copper); padding-top: 0.25rem; }
@@ -373,14 +375,14 @@ main > section:not(.hero):not(.figures) { content-visibility: auto; contain-intr
     padding: var(--sp-4); background: var(--c-paper);
 }
 .house-spec div { display: flex; flex-direction: column; }
-.house-spec b { font-family: var(--f-serif); font-weight: 400; font-size: 1.9rem; color: var(--c-ink); line-height: 1.1; }
+.house-spec b { font-family: var(--f-serif); font-weight: 400; font-size: clamp(1.5rem, 1.2rem + 0.8vw, 1.9rem); white-space: nowrap; color: var(--c-ink); line-height: 1.1; }
 .house-spec b + span { margin-top: 0.2rem; }
 @media (min-width: 640px) { .house-spec { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .house-spec span { font-size: var(--fs-xs); letter-spacing: 0.1em; text-transform: uppercase; color: var(--c-muted); }
 @media (min-width: 960px) {
     .houses { grid-template-columns: 5fr 6fr; gap: var(--sp-6); align-items: start; }
     .houses__visuals { position: sticky; top: 6rem; display: grid; gap: var(--sp-3); }
-    .houses__visuals .placeholder:nth-child(2) { width: 72%; margin-left: auto; margin-top: calc(-1 * var(--sp-6)); aspect-ratio: 1; }
+    .houses__visuals .placeholder { width: 72%; margin-left: auto; aspect-ratio: 1; }
 }
 
 /* ---------- 6. Le lieu ---------- */
