@@ -11,7 +11,7 @@ Distances par la route depuis le terrain : calcul OpenStreetMap (OSRM), arrondie
 ## Métadonnées : page d'accueil
 
 - Title (57 car.) : Maisons neuves et terrains à Dřetovice, 15 min de Prague `{cz: Nové rodinné domy a pozemky Dřetovice, 15 min od Prahy}`
-- Meta description (155 car.) : 7 terrains à bâtir et maisons d'architecte d'environ 150 m² à Dřetovice, district de Kladno, à 15 minutes de Prague. Lancement des ventes prévu début 2027.
+- Meta description (148 car.) : 7 terrains à bâtir et maisons d'architecte d'environ 150 m² à Dřetovice, district de Kladno, à 15 minutes de Prague, en bordure d'un verger protégé.
 - OG title : U zapomenutého sadu, maisons neuves et terrains à Dřetovice
 
 ---
@@ -36,8 +36,6 @@ Sur-titre : U zapomenutého sadu · Au verger oublié
 `{cz: Nové rodinné domy a stavební pozemky v Dřetovicích, 15 minut od Prahy}`
 
 7 terrains en bordure d'un verger protégé. Sur chacun, une maison d'environ 150 m² dessinée par un architecte pour ce terrain.
-
-Statut : Lancement des ventes prévu début 2027
 
 Bouton : Être informé en priorité
 Lien secondaire : Voir l'avancement
@@ -68,15 +66,13 @@ Label : 01 · Avancement
 ## Où en est le projet : viabilisation et permis de construire
 `{cz: inženýrské sítě, stavební povolení}`
 
-Intro : Cette frise est mise à jour à chaque étape franchie. Dernière mise à jour : octobre 2026.
+Intro : Cette frise est mise à jour à chaque étape franchie.
 
-1. Viabilisation des terrains : en cours. Eau, électricité, tout-à-l'égout. La date du raccordement électrique dépend du gestionnaire de réseau.
-2. Permis de construire des maisons : en cours d'instruction. Retour des organismes consultés attendu au printemps 2027.
-3. Lancement des ventes : prévu début 2027. Les personnes inscrites sont informées en premier.
-4. Construction : maisons préfabriquées, montage rapide sur le terrain.
-5. Livraison : sous un an après la signature du contrat de construction.
+1. Viabilisation des terrains : en cours. Eau, électricité, tout-à-l'égout.
+2. Permis de construire : en cours. Pour les maisons dessinées par l'architecte.
+3. Ouverture des ventes : prochainement. Les personnes inscrites sont informées en premier. Lien : Être informé en priorité
 
-Mention : Calendrier indicatif.
+Mention : Dernière mise à jour : octobre 2026.
 
 ---
 
@@ -94,7 +90,7 @@ Consigne : Survolez ou touchez un terrain pour voir sa surface.
 Fiche terrain (au clic) :
 - Terrain n° X
 - Surface : 500 à 550 m² [surface exacte À CONFIRMER]
-- Statut : ouverture des ventes début 2027
+- Statut : ouverture des ventes prochainement
 - Prix : sur demande
 - Bouton : Je suis intéressé par ce terrain
 
@@ -255,7 +251,7 @@ Label : 10 · Questions
 ## Questions fréquentes
 
 1. **Quand pourra-t-on acheter ?**
-   Le lancement des ventes est prévu début 2027. La date exacte dépend du raccordement électrique. Inscrivez-vous pour être prévenu en premier.
+   Les ventes ouvriront prochainement. Inscrivez-vous pour être prévenu en premier.
 
 2. **Quel est le prix ?**
    Les prix seront communiqués à l'ouverture des ventes. Ils dépendent des travaux de viabilisation en cours. Prix sur demande via le formulaire.
@@ -264,10 +260,10 @@ Label : 10 · Questions
    [À CONFIRMER]
 
 4. **Où en est le permis de construire ?**
-   Le permis de construire des maisons est en cours d'instruction. Les retours des organismes consultés sont attendus au printemps 2027.
+   Le permis de construire des maisons est en cours d'instruction. L'avancement est indiqué dans la section « Où en est le projet ».
 
 5. **Les terrains sont-ils viabilisés ?**
-   La viabilisation est en cours : eau, électricité, tout-à-l'égout. La date du raccordement électrique dépend du gestionnaire de réseau.
+   La viabilisation est en cours : eau, électricité, tout-à-l'égout.
 
 6. **Peut-on modifier le plan de la maison ?**
    Oui. Vous choisissez entre 4+kk et 5+kk, et entre deux ou trois salles de bains. L'aménagement intérieur se règle avec le constructeur avant la signature.
@@ -339,7 +335,7 @@ Messages d'erreur :
 ## Page de confirmation (/merci/)
 
 # Merci, votre demande est enregistrée
-Vous serez informé en priorité à l'ouverture des ventes, prévue début 2027.
+Vous serez informé en priorité à l'ouverture des ventes.
 Lien : Retour au projet
 
 ---

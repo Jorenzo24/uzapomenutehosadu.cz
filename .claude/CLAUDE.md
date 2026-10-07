@@ -30,7 +30,7 @@ Cliente : Katerina, société « La Maison du Bonheur ».
 ## Contraintes de contenu (non négociables)
 - Aucune mention de bois / ossature bois / dřevostavba.
 - Aucun prix : « sur demande » + formulaire.
-- Statuts exacts : viabilisation en cours, permis en cours d'instruction, lancement des ventes prévu début 2027.
+- Statuts exacts : viabilisation en cours, permis en cours d'instruction, ouverture des ventes « prochainement ». Aucune date affichée (ni ventes, ni permis).
 - Aucun rendu de maison simulé : placeholders SVG uniquement.
 - District = Kladno, jamais Praha-západ.
 - Infos manquantes : `[À CONFIRMER]`, listées dans `content/a-confirmer.md`.

@@ -5,6 +5,8 @@
 /* ---------------------------------------------------------
    AVANCEMENT DU PROJET : seul endroit à modifier.
    status : "done" (terminé) | "current" (en cours) | "upcoming" (à venir)
+   Quand une étape est franchie : status "done" et label "Terminé".
+   link (facultatif) : lien affiché sous le texte de l'étape.
    --------------------------------------------------------- */
 const PROJECT_PROGRESS = {
     updated: 'octobre 2026',
@@ -13,31 +15,20 @@ const PROJECT_PROGRESS = {
             title: 'Viabilisation des terrains',
             status: 'current',
             label: 'En cours',
-            text: "Eau, électricité, tout-à-l'égout. La date du raccordement électrique dépend du gestionnaire de réseau."
+            text: "Eau, électricité, tout-à-l'égout."
         },
         {
             title: 'Permis de construire',
             status: 'current',
-            label: "En cours d'instruction",
-            text: 'Retour des organismes consultés attendu au printemps 2027.'
+            label: 'En cours',
+            text: 'Pour les maisons dessinées par l\'architecte.'
         },
         {
-            title: 'Lancement des ventes',
+            title: 'Ouverture des ventes',
             status: 'upcoming',
-            label: 'Prévu début 2027',
-            text: 'Les personnes inscrites sont informées en premier.'
-        },
-        {
-            title: 'Construction',
-            status: 'upcoming',
-            label: 'À venir',
-            text: 'Maisons préfabriquées en atelier, montage rapide sur le terrain.'
-        },
-        {
-            title: 'Livraison',
-            status: 'upcoming',
-            label: 'Sous un an',
-            text: 'Après la signature du contrat de construction.'
+            label: 'Prochainement',
+            text: 'Les personnes inscrites sont informées en premier.',
+            link: { href: '#contact', label: 'Être informé en priorité' }
         }
     ]
 };
@@ -46,13 +37,13 @@ const PROJECT_PROGRESS = {
    TERRAINS : surfaces et statuts du plan de situation.
    --------------------------------------------------------- */
 const LOTS = {
-    1: { area: '500 à 550 m²', status: 'Ouverture des ventes début 2027' },
-    2: { area: '500 à 550 m²', status: 'Ouverture des ventes début 2027' },
-    3: { area: '500 à 550 m²', status: 'Ouverture des ventes début 2027' },
-    4: { area: '500 à 550 m²', status: 'Ouverture des ventes début 2027' },
-    5: { area: '500 à 550 m²', status: 'Ouverture des ventes début 2027' },
-    6: { area: '500 à 550 m²', status: 'Ouverture des ventes début 2027' },
-    7: { area: '1 200 m²', status: 'Ouverture des ventes début 2027' }
+    1: { area: '500 à 550 m²', status: 'Ouverture des ventes prochainement' },
+    2: { area: '500 à 550 m²', status: 'Ouverture des ventes prochainement' },
+    3: { area: '500 à 550 m²', status: 'Ouverture des ventes prochainement' },
+    4: { area: '500 à 550 m²', status: 'Ouverture des ventes prochainement' },
+    5: { area: '500 à 550 m²', status: 'Ouverture des ventes prochainement' },
+    6: { area: '500 à 550 m²', status: 'Ouverture des ventes prochainement' },
+    7: { area: '1 200 m²', status: 'Ouverture des ventes prochainement' }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -123,6 +114,7 @@ function renderTimeline() {
             <p class="step__status">${s.label}</p>
             <h3>${s.title}</h3>
             <p>${s.text}</p>
+            ${s.link ? `<p class="step__link"><a class="link-arrow" href="${s.link.href}">${s.link.label}</a></p>` : ''}
         </li>`).join('');
 }
 
