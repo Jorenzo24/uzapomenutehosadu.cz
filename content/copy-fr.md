@@ -231,16 +231,16 @@ Label : 09 · Acheter
 ## Acheter un terrain et faire construire sa maison
 `{cz: koupě pozemku, kupní smlouva, katastr nemovitostí}`
 
-Intro : Deux contrats, deux interlocuteurs. Vous achetez le terrain à La Maison du Bonheur. Vous signez la construction de la maison directement avec le constructeur.
+Intro : Deux contrats, deux interlocuteurs. Vous achetez le terrain à son propriétaire. Vous signez la construction de la maison directement avec le constructeur.
 
 1. Prise de contact : vous remplissez le formulaire. Nous vous informons dès l'ouverture des ventes.
 2. Visite du terrain.
-3. Promesse de vente du terrain.
+3. Promesse de vente du terrain, pour le terrain que vous avez choisi.
 4. Contrat de construction, signé avec le constructeur.
 5. Enregistrement au cadastre : environ 3 mois.
 6. Livraison de la maison : sous un an.
 
-Financement : Vous financez le terrain et la maison par votre banque ou votre courtier. Nous ne donnons pas de conseil en financement. Nous fournissons les documents que demande la banque.
+Financement : Vous financez le terrain et la maison par votre banque ou votre courtier. Nous ne donnons pas de conseil en financement.
 
 Lien : Le processus d'achat en détail
 
@@ -283,7 +283,7 @@ Label : 10 · Questions
     [À CONFIRMER : taux sur le terrain et sur la maison]
 
 11. **Comment financer l'achat ?**
-    Par un prêt immobilier auprès de votre banque. Nous fournissons les documents du projet nécessaires au dossier.
+    Par un prêt immobilier auprès de votre banque.
 
 ---
 
@@ -302,11 +302,6 @@ Champs :
 - Nom *
 - E-mail *
 - Téléphone
-- Ce qui vous intéresse (plusieurs choix) :
-  - Acheter un terrain près de Prague
-  - Acheter une maison près de Prague
-  - Une construction neuve
-  - Une livraison sous un an
 - Terrain qui vous intéresse (facultatif) : Pas encore de préférence / Terrain 1 … Terrain 7
 - Message
 - Case (obligatoire, non cochée) : J'accepte que mes données soient utilisées pour me recontacter au sujet de ce projet, selon la politique de confidentialité.
@@ -327,7 +322,7 @@ Messages d'erreur :
 
 - U zapomenutého sadu · Au verger oublié
 - Dřetovice, district de Kladno, Bohême centrale
-- Un projet de La Maison du Bonheur [entité juridique À CONFIRMER]
+- Porteur du projet : [À CONFIRMER]
 - Mentions légales · Confidentialité
 - Langue : CZ · EN · FR
 - © 2026 U zapomenutého sadu

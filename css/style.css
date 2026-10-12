@@ -371,10 +371,10 @@ main > section:not(.hero):not(.figures) { content-visibility: auto; contain-intr
 .house-point li { padding-left: 1.1rem; position: relative; }
 .house-point li::before { content: ""; position: absolute; left: 0; top: 0.72em; width: 6px; height: 6px; border-radius: 50%; background: var(--c-leaf); }
 .house-spec {
-    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-3) var(--sp-3);
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-4) var(--sp-2);
     padding: var(--sp-4); background: var(--c-paper);
 }
-.house-spec div { display: flex; flex-direction: column; }
+.house-spec div { display: flex; flex-direction: column; align-items: center; text-align: center; }
 .house-spec b { font-family: var(--f-serif); font-weight: 400; font-size: clamp(1.5rem, 1.2rem + 0.8vw, 1.9rem); white-space: nowrap; color: var(--c-ink); line-height: 1.1; }
 .house-spec b + span { margin-top: 0.2rem; }
 @media (min-width: 640px) { .house-spec { grid-template-columns: repeat(4, minmax(0, 1fr)); } }

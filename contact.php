@@ -18,12 +18,6 @@ const MIN_SECONDS  = 3;                                       // délai minimal 
 const PAGE_SUCCESS = 'merci/';
 const PAGE_FORM    = './';
 
-$INTERESTS = [
-    'terrain' => 'Acheter un terrain près de Prague',
-    'maison'  => 'Acheter une maison près de Prague',
-    'neuf'    => 'Une construction neuve',
-    'un-an'   => 'Une livraison sous un an',
-];
 
 // ---------- Helpers ----------
 function redirect(string $to): void
@@ -77,15 +71,6 @@ $terrain   = field('terrain', 2);
 $message   = field('message', 2000);
 $consent   = ($_POST['consentement'] ?? '') === '1';
 
-$interets = [];
-if (isset($_POST['interets']) && is_array($_POST['interets'])) {
-    foreach ($_POST['interets'] as $i) {
-        if (is_string($i) && isset($INTERESTS[$i])) {
-            $interets[] = $INTERESTS[$i];
-        }
-    }
-}
-
 if (
     mb_strlen($nom) < 2
     || !filter_var($email, FILTER_VALIDATE_EMAIL)
@@ -110,10 +95,10 @@ if ($dir !== null) {
         flock($fh, LOCK_EX);
         if ($isNew) {
             fwrite($fh, "\xEF\xBB\xBF"); // BOM UTF-8 pour Excel
-            fputcsv($fh, ['date', 'nom', 'email', 'telephone', 'terrain', 'interets', 'message', 'consentement', 'ip'], ';');
+            fputcsv($fh, ['date', 'nom', 'email', 'telephone', 'terrain', 'message', 'consentement', 'ip'], ';');
         }
         $saved = fputcsv($fh, array_map('csv_safe', [
-            $date, $nom, $email, $telephone, $terrain, implode(' | ', $interets), $message, 'oui', $ip,
+            $date, $nom, $email, $telephone, $terrain, $message, 'oui', $ip,
         ]), ';') !== false;
         flock($fh, LOCK_UN);
         fclose($fh);
@@ -130,7 +115,6 @@ $body = implode("\n", [
     'E-mail : ' . $email,
     'Téléphone : ' . ($telephone !== '' ? $telephone : '-'),
     'Terrain : ' . ($terrain !== '' ? $terrain : 'pas de préférence'),
-    'Intérêts : ' . ($interets ? implode(', ', $interets) : '-'),
     '',
     'Message :',
     $message !== '' ? $message : '-',

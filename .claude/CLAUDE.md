@@ -1,7 +1,7 @@
 # uzapomenutehosadu.cz : « U zapomenutého sadu »
 
 Site de commercialisation de 7 terrains + maisons d'architecte (~150 m²) à Dřetovice (okres Kladno, Středočeský kraj).
-Cliente : Katerina, société « La Maison du Bonheur ».
+Cliente : Katerina. Nom de société inconnu (« La Maison du Bonheur » est son nom WhatsApp : ne jamais l'afficher).
 
 ## Hébergement
 - Production : VPS Hetzner, cPanel. Username cPanel : `CPANEL_USERNAME_A_CONFIRMER`.

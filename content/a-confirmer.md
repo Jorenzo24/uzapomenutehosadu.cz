@@ -6,7 +6,7 @@ Liste tenue à jour pendant le développement. Chaque point correspond à un `[�
 - [ ] E-mail qui reçoit les demandes du formulaire (`contact.php`, constante `LEAD_TO`)
 - [ ] Adresse d'expédition à créer sur le serveur (`LEAD_FROM`, proposé : formulaire@uzapomenutehosadu.cz)
 - [ ] Téléphone à afficher, et personne à nommer comme contact
-- [ ] Entité juridique : forme exacte de « La Maison du Bonheur », IČO, DIČ, siège, registre (mentions légales, confidentialité, footer)
+- [ ] Entité juridique qui vend les terrains : raison sociale, forme, IČO, DIČ, siège, registre (mentions légales, confidentialité, footer « Porteur du projet »)
 - [ ] Responsable de la publication
 - [ ] Les leads sont-ils transmis au constructeur ? (politique de confidentialité, section « Destinataires »)
 - [ ] Durée de conservation des leads : proposition « fin de commercialisation, au plus 3 ans après le dernier contact »
@@ -26,7 +26,7 @@ Liste tenue à jour pendant le développement. Chaque point correspond à un `[�
 ## Commercial et fiscal
 - [ ] La cliente est-elle assujettie à la DPH (TVA) pour la vente des terrains ? Taux sur la maison ? (FAQ)
 - [ ] Frais à prévoir : montants indicatifs (avocat ou notaire, cadastre) (FAQ, page « Comment acheter »)
-- [ ] Montant de l'acompte à la promesse de vente / rezervační poplatek (page « Comment acheter »)
+- [ ] Conditions de la promesse de vente : acompte, rezervační poplatek (page « Comment acheter »)
 
 ## Contenu et visuels
 - [ ] Le dessin des 7 maisons le long de la rue devant le verger (`assets/images/raw/4be679e6-….jpeg`) : est-ce une esquisse de l'architecte ? Peut-on la publier ? En attendant, le site ne l'affiche pas (règle : aucun visuel de maison non validé).
