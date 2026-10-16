@@ -7,11 +7,9 @@
     <title>Comparaison des polices | U zapomenutého sadu</title>
     <!-- Page de travail temporaire : non déployée sur le cPanel, à supprimer après le choix. -->
     <style>
-        @font-face { font-family: "Geist"; src: url("../assets/fonts/geist-latin.woff2") format("woff2"); font-weight: 300 600; }
-        @font-face { font-family: "Wix Madefor Display"; src: url("fonts/wix.woff2") format("woff2"); font-weight: 400 800; }
-        @font-face { font-family: "Golos Text"; src: url("fonts/golos.woff2") format("woff2"); font-weight: 400 900; }
+        @font-face { font-family: "Nunito Sans"; src: url("../assets/fonts/nunito-sans-latin.woff2") format("woff2"); font-weight: 300 700; }
+        @font-face { font-family: "Mulish"; src: url("fonts/mulish.woff2") format("woff2"); font-weight: 200 1000; }
         @font-face { font-family: "Jost"; src: url("fonts/jost.woff2") format("woff2"); font-weight: 100 900; }
-        @font-face { font-family: "Manrope"; src: url("fonts/manrope.woff2") format("woff2"); font-weight: 200 800; }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { background: #fff; color: #4a382b; font: 16px/1.6 system-ui, sans-serif; }
         header.top { padding: 2.5rem clamp(1.25rem, 4vw, 3rem) 1rem; max-width: 1240px; margin: 0 auto; }
@@ -25,52 +23,41 @@
         .hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 45% 55%; }
         .card { position: absolute; left: 2rem; bottom: 0; max-width: 34rem; padding: 2.25rem 2.5rem 2.5rem; color: #fbf8f3; background: linear-gradient(160deg, #6a4e3a 0%, #5b4332 60%, #4d382a 100%); }
         .card .k { font-size: .75rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; opacity: .8; margin-bottom: .8rem; }
-        .card h2 { font-size: 2.6rem; line-height: 1.06; font-weight: 400; letter-spacing: -.03em; }
+        .card { max-width: 27rem; background: rgba(80,58,43,.82); padding: 1.9rem 2.1rem 2.1rem; }
+        .card h2 { font-size: 2.4rem; line-height: 1.08; font-weight: var(--w); letter-spacing: -.02em; }
+        .card h2 span { display: block; margin-top: .45rem; font-size: .56em; color: #ecc9a6; }
         .card h2 em { font-style: normal; color: #e8c3a0; }
         .card p { margin-top: .8rem; opacity: .9; }
         .below { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2.5rem; align-items: start; }
-        .below h3 { font-size: 2.4rem; line-height: 1.08; font-weight: 400; letter-spacing: -.03em; color: #3a2a1f; }
+        .below h3 { font-size: 2.4rem; line-height: 1.08; font-weight: var(--w); letter-spacing: -.02em; color: #3a2a1f; }
         .below p { margin-top: 1rem; max-width: 32rem; }
         .nums { display: flex; gap: 2.5rem; align-items: baseline; color: #3a2a1f; }
-        .nums b { font-size: 4.5rem; font-weight: 300; letter-spacing: -.04em; line-height: 1; }
+        .nums b { font-size: 4.5rem; font-weight: 400; letter-spacing: -.04em; line-height: 1; }
         .nums small { font-size: 1.3rem; color: #75624f; }
         @media (max-width: 760px) { .card { left: 0; right: 0; position: relative; } .hero { height: auto; } .hero img { position: relative; height: 16rem; } .below { grid-template-columns: 1fr; } .card h2 { font-size: 2rem; } }
-    </style>
+        </style>
 </head>
 <body>
     <header class="top">
-        <h1>Comparaison des polices de titres</h1>
-        <p>Chaque option est montrée sur le vrai titre et la vraie photo. Toutes gèrent le tchèque et le russe. La police des titres de la capture « Cailles » est Acumin Pro (Adobe, sous licence, non auto-hébergeable) : B et C en sont les plus proches.</p>
+        <h1>Comparaison des polices de titres, style Avenir</h1>
+        <p>Trois polices libres proches d'Avenir, avec le tchèque et le russe, montrées sur le vrai titre et la vraie photo. Avenir elle-même est sous licence commerciale (Linotype/Monotype).</p>
     </header>
 
-    <!-- Une section par police : la variable --f s'applique à toute la section -->
-    <section class="opt" style="font-family: 'Geist', sans-serif">
-        <p class="opt__label"><b>A</b>Geist <span>police actuelle</span></p>
-        <div class="hero"><img src="../assets/images/dretovice-verger-fleuri-village-eglise-1600.jpg" alt=""><div class="card"><p class="k">U zapomenutého sadu · Au verger oublié</p><h2>Maisons neuves et terrains à bâtir à Dřetovice, <em>à 15 minutes de Prague</em></h2><p>7 terrains en bordure d'un verger protégé. Sur chacun, une maison d'environ 150 m² dessinée par un architecte pour ce terrain.</p></div></div>
+    <section class="opt" style="font-family: 'Nunito Sans', sans-serif; --w: 600">
+        <p class="opt__label"><b>A</b>Nunito Sans <span>la plus proche d'Avenir, appliquée sur le site (titres en 600)</span></p>
+        <div class="hero"><img src="../assets/images/dretovice-verger-fleuri-village-eglise-1600.jpg" alt=""><div class="card"><p class="k">U zapomenutého sadu · Au verger oublié</p><h2>Maisons neuves et terrains à bâtir à Dřetovice <span>à 15 minutes de Prague</span></h2><p>7 terrains en bordure d'un verger protégé. Sur chacun, une maison d'environ 150 m² dessinée par un architecte.</p></div></div>
         <div class="below"><div><h3>Des maisons d'architecte conçues pour ces terrains</h3><p>Les maisons sont préfabriquées en atelier puis montées sur le terrain. Livraison sous un an après la signature du contrat de construction.</p></div><div class="nums"><b>7</b><b>500<small> à 550 m²</small></b></div></div>
     </section>
 
-    <section class="opt" style="font-family: 'Wix Madefor Display', sans-serif">
-        <p class="opt__label"><b>B</b>Wix Madefor Display <span>grotesque proche d'Acumin, avec plus de caractère</span></p>
-        <div class="hero"><img src="../assets/images/dretovice-verger-fleuri-village-eglise-1600.jpg" alt=""><div class="card"><p class="k">U zapomenutého sadu · Au verger oublié</p><h2>Maisons neuves et terrains à bâtir à Dřetovice, <em>à 15 minutes de Prague</em></h2><p>7 terrains en bordure d'un verger protégé. Sur chacun, une maison d'environ 150 m² dessinée par un architecte pour ce terrain.</p></div></div>
-        <div class="below"><div><h3>Des maisons d'architecte conçues pour ces terrains</h3><p>Les maisons sont préfabriquées en atelier puis montées sur le terrain. Livraison sous un an après la signature du contrat de construction.</p></div><div class="nums"><b style="font-weight:400">7</b><b style="font-weight:400">500<small> à 550 m²</small></b></div></div>
-    </section>
-
-    <section class="opt" style="font-family: 'Golos Text', sans-serif">
-        <p class="opt__label"><b>C</b>Golos Text <span>la plus proche d'Acumin Pro</span></p>
-        <div class="hero"><img src="../assets/images/dretovice-verger-fleuri-village-eglise-1600.jpg" alt=""><div class="card"><p class="k">U zapomenutého sadu · Au verger oublié</p><h2>Maisons neuves et terrains à bâtir à Dřetovice, <em>à 15 minutes de Prague</em></h2><p>7 terrains en bordure d'un verger protégé. Sur chacun, une maison d'environ 150 m² dessinée par un architecte pour ce terrain.</p></div></div>
-        <div class="below"><div><h3>Des maisons d'architecte conçues pour ces terrains</h3><p>Les maisons sont préfabriquées en atelier puis montées sur le terrain. Livraison sous un an après la signature du contrat de construction.</p></div><div class="nums"><b style="font-weight:400">7</b><b style="font-weight:400">500<small> à 550 m²</small></b></div></div>
-    </section>
-
-    <section class="opt" style="font-family: 'Jost', sans-serif">
-        <p class="opt__label"><b>D</b>Jost <span>géométrique, esprit Futura / Bauhaus, très architecture</span></p>
-        <div class="hero"><img src="../assets/images/dretovice-verger-fleuri-village-eglise-1600.jpg" alt=""><div class="card"><p class="k">U zapomenutého sadu · Au verger oublié</p><h2>Maisons neuves et terrains à bâtir à Dřetovice, <em>à 15 minutes de Prague</em></h2><p>7 terrains en bordure d'un verger protégé. Sur chacun, une maison d'environ 150 m² dessinée par un architecte pour ce terrain.</p></div></div>
+    <section class="opt" style="font-family: 'Mulish', sans-serif; --w: 700">
+        <p class="opt__label"><b>B</b>Mulish <span>proche d'Avenir, un peu plus ronde (titres en 700)</span></p>
+        <div class="hero"><img src="../assets/images/dretovice-verger-fleuri-village-eglise-1600.jpg" alt=""><div class="card"><p class="k">U zapomenutého sadu · Au verger oublié</p><h2>Maisons neuves et terrains à bâtir à Dřetovice <span>à 15 minutes de Prague</span></h2><p>7 terrains en bordure d'un verger protégé. Sur chacun, une maison d'environ 150 m² dessinée par un architecte.</p></div></div>
         <div class="below"><div><h3>Des maisons d'architecte conçues pour ces terrains</h3><p>Les maisons sont préfabriquées en atelier puis montées sur le terrain. Livraison sous un an après la signature du contrat de construction.</p></div><div class="nums"><b>7</b><b>500<small> à 550 m²</small></b></div></div>
     </section>
 
-    <section class="opt" style="font-family: 'Manrope', sans-serif">
-        <p class="opt__label"><b>E</b>Manrope <span>semi-géométrique, moderne et douce</span></p>
-        <div class="hero"><img src="../assets/images/dretovice-verger-fleuri-village-eglise-1600.jpg" alt=""><div class="card"><p class="k">U zapomenutého sadu · Au verger oublié</p><h2>Maisons neuves et terrains à bâtir à Dřetovice, <em>à 15 minutes de Prague</em></h2><p>7 terrains en bordure d'un verger protégé. Sur chacun, une maison d'environ 150 m² dessinée par un architecte pour ce terrain.</p></div></div>
+    <section class="opt" style="font-family: 'Jost', sans-serif; --w: 500">
+        <p class="opt__label"><b>C</b>Jost <span>esprit Futura, cousine d'Avenir, plus géométrique (titres en 500)</span></p>
+        <div class="hero"><img src="../assets/images/dretovice-verger-fleuri-village-eglise-1600.jpg" alt=""><div class="card"><p class="k">U zapomenutého sadu · Au verger oublié</p><h2>Maisons neuves et terrains à bâtir à Dřetovice <span>à 15 minutes de Prague</span></h2><p>7 terrains en bordure d'un verger protégé. Sur chacun, une maison d'environ 150 m² dessinée par un architecte.</p></div></div>
         <div class="below"><div><h3>Des maisons d'architecte conçues pour ces terrains</h3><p>Les maisons sont préfabriquées en atelier puis montées sur le terrain. Livraison sous un an après la signature du contrat de construction.</p></div><div class="nums"><b>7</b><b>500<small> à 550 m²</small></b></div></div>
     </section>
 </body>

@@ -4,20 +4,20 @@
    se distinguent par leur fond et leur composition.
    ========================================================= */
 
-/* ---------- Police : Geist (variable 300-600), 2 fichiers woff2 ----------
-   geist-latin : latin + tchèque. geist-cyrillic : chargé seulement si la page contient du cyrillique (version russe). */
+/* ---------- Police : Nunito Sans (proche d'Avenir), variable 300-700, 2 fichiers woff2 ----------
+   nunito-sans-latin : latin + tchèque. nunito-sans-cyrillic : chargé seulement si la page contient du cyrillique (version russe). */
 @font-face {
-    font-family: "Geist";
-    src: url("../assets/fonts/geist-latin.woff2") format("woff2");
-    font-weight: 300 600;
+    font-family: "Nunito Sans";
+    src: url("../assets/fonts/nunito-sans-latin.woff2") format("woff2");
+    font-weight: 300 700;
     font-style: normal;
     font-display: optional;
     unicode-range: U+0020-007E, U+00A0-00FF, U+0100-017F, U+2010-2027, U+2030-203A, U+20AC, U+2122, U+2190-2193, U+2212;
 }
 @font-face {
-    font-family: "Geist";
-    src: url("../assets/fonts/geist-cyrillic.woff2") format("woff2");
-    font-weight: 300 600;
+    font-family: "Nunito Sans";
+    src: url("../assets/fonts/nunito-sans-cyrillic.woff2") format("woff2");
+    font-weight: 300 700;
     font-style: normal;
     font-display: optional;
     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
@@ -52,8 +52,8 @@
     --g-dawn: linear-gradient(135deg, #f3e6d6 0%, #ead7c1 55%, #e2cdb2 100%);
 
     /* Typo */
-    --f-display: "Geist", "Helvetica Neue", Arial, system-ui, sans-serif;
-    --f-sans: "Geist", "Helvetica Neue", Arial, system-ui, sans-serif;
+    --f-display: "Nunito Sans", "Avenir Next", Avenir, "Segoe UI", system-ui, sans-serif;
+    --f-sans: "Nunito Sans", "Avenir Next", Avenir, "Segoe UI", system-ui, sans-serif;
 
     --fs-xs: 0.78rem;
     --fs-sm: 0.9rem;
@@ -61,7 +61,7 @@
     --fs-lg: clamp(1.15rem, 1rem + 0.5vw, 1.35rem);
     --fs-h3: clamp(1.3rem, 1.1rem + 0.8vw, 1.7rem);
     --fs-h2: clamp(2rem, 1.4rem + 2.6vw, 3.6rem);
-    --fs-h1: clamp(1.9rem, 1.4rem + 1.6vw, 2.9rem);
+    --fs-h1: clamp(1.8rem, 1.4rem + 1.2vw, 2.5rem);
     --fs-display: clamp(4rem, 2.5rem + 7vw, 9.5rem);
 
     /* Espacements */
@@ -115,10 +115,10 @@ ul[role="list"], ol[role="list"] { list-style: none; }
 /* ---------- Typo ---------- */
 h1, h2, h3, .serif {
     font-family: var(--f-display);
-    font-weight: 400;
+    font-weight: 600;
     color: var(--c-ink);
-    line-height: 1.06;
-    letter-spacing: -0.035em;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
     text-wrap: balance;
 }
 h2 { font-size: var(--fs-h2); }
@@ -229,8 +229,7 @@ strong { font-weight: 600; color: var(--c-ink); }
 main > section:not(.hero):not(.figures) { content-visibility: auto; contain-intrinsic-size: auto 1100px; }
 
 /* ---------- 1. Hero ----------
-   Photo pleine largeur sans voile. Le texte est dans un bloc brun plein, posé en bas à gauche :
-   lisible à coup sûr, et le paysage reste visible. */
+   Photo pleine largeur. Texte dans un bloc brun compact et légèrement transparent, en bas à gauche. */
 .hero { position: relative; color: var(--c-paper); isolation: isolate; display: grid; }
 .hero__media { position: relative; display: block; height: 62svh; min-height: 22rem; }
 .hero__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 45% 55%; }
@@ -239,27 +238,18 @@ main > section:not(.hero):not(.figures) { content-visibility: auto; contain-intr
     background: linear-gradient(180deg, rgba(38, 26, 18, 0.5) 0%, rgba(38, 26, 18, 0) 100%);
 }
 .hero__inner { position: relative; z-index: 2; padding-inline: 0; }
-.hero__card {
-    background: linear-gradient(160deg, #6a4e3a 0%, var(--c-earth) 60%, #4d382a 100%);
-    padding: clamp(1.75rem, 1.2rem + 2.5vw, 3rem) var(--gutter);
-}
-.hero__kicker { font-size: var(--fs-xs); font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: var(--sp-2); color: rgba(251, 248, 243, 0.8); }
-.hero__kicker em { font-style: normal; text-transform: none; letter-spacing: 0; font-size: 1.15em; }
-.hero h1 { color: var(--c-paper); font-size: var(--fs-h1); font-weight: 400; }
-.hero h1 em { font-style: normal; color: #e8c3a0; }
-.hero__sub { margin-top: var(--sp-2); font-size: var(--fs-base); color: rgba(251, 248, 243, 0.88); }
-.hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-3); margin-top: var(--sp-3); }
-.hero__actions .link-arrow { color: var(--c-paper); }
+.hero__card { background: rgba(80, 58, 43, 0.97); padding: 1.75rem var(--gutter) 2rem; }
+.hero__kicker { font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.9rem; color: rgba(251, 248, 243, 0.78); }
+.hero__kicker em { font-style: normal; text-transform: none; letter-spacing: 0; font-size: 1.15em; font-weight: 600; }
+.hero h1 { color: var(--c-paper); font-size: var(--fs-h1); font-weight: 600; letter-spacing: -0.02em; }
+.hero h1 span { display: block; margin-top: 0.45rem; font-size: 0.56em; font-weight: 600; letter-spacing: 0; color: #ecc9a6; }
+.hero__sub { margin-top: 0.9rem; font-size: var(--fs-sm); line-height: 1.55; color: rgba(251, 248, 243, 0.88); max-width: 26rem; }
 .hero__caption { position: absolute; right: var(--gutter); top: 5.5rem; z-index: 2; font-size: var(--fs-xs); color: #fff; max-width: 18rem; text-align: right; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.55); display: none; }
 @media (min-width: 960px) {
     .hero { display: block; }
     .hero__media { height: min(100svh, 56rem); min-height: 38rem; }
-    /* Bloc collé au bord gauche : il se prolonge dans le panneau brun du « 7 » juste en dessous */
-    .hero__inner { position: absolute; left: 0; bottom: 0; width: auto; max-width: none; margin: 0; padding: 0; }
-    .hero__card {
-        width: calc(max(var(--gutter), (100vw - var(--max)) / 2 + var(--gutter)) + 31rem);
-        padding: 2.5rem 2.75rem 2.75rem max(var(--gutter), calc((100vw - var(--max)) / 2 + var(--gutter)));
-    }
+    .hero__inner { position: absolute; left: 0; right: 0; bottom: 0; padding-inline: var(--gutter); }
+    .hero__card { display: inline-block; max-width: 27rem; padding: 1.9rem 2.1rem 2.1rem; background: rgba(80, 58, 43, 0.82); }
     .hero__caption { display: block; top: auto; bottom: 1.25rem; }
 }
 
@@ -276,7 +266,7 @@ main > section:not(.hero):not(.figures) { content-visibility: auto; contain-intr
 .figures__rest { padding: clamp(3rem, 2rem + 5vw, 7rem) var(--gutter); }
 .figures__grid { display: grid; gap: var(--sp-5) var(--sp-4); grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .figure { display: flex; flex-direction: column; gap: 0.35rem; }
-.figure__value { font-family: var(--f-display); font-weight: 300; font-size: clamp(2.4rem, 1.7rem + 2.4vw, 3.8rem); line-height: 0.95; color: var(--c-ink); letter-spacing: -0.04em; font-variant-numeric: lining-nums; white-space: nowrap; }
+.figure__value { font-family: var(--f-display); font-weight: 400; font-size: clamp(2.4rem, 1.7rem + 2.4vw, 3.8rem); line-height: 0.95; color: var(--c-ink); letter-spacing: -0.04em; font-variant-numeric: lining-nums; white-space: nowrap; }
 .figure__value small { font-size: 0.36em; letter-spacing: -0.01em; margin-left: 0.15em; color: var(--c-taupe); }
 .figure__label { font-size: var(--fs-sm); color: var(--c-muted); max-width: 16rem; }
 .figure--hero .figure__value { font-size: clamp(7rem, 4rem + 12vw, 13rem); color: #e8c3a0; }
@@ -348,7 +338,7 @@ main > section:not(.hero):not(.figures) { content-visibility: auto; contain-intr
 .plan__tooltip.is-visible { opacity: 1; }
 
 .lot-card { background: var(--c-mist); padding: var(--sp-4); align-self: start; }
-.lot-card__num { font-family: var(--f-display); font-weight: 300; font-size: clamp(4rem, 3rem + 4vw, 6.5rem); line-height: 0.85; color: var(--c-copper); }
+.lot-card__num { font-family: var(--f-display); font-weight: 400; font-size: clamp(4rem, 3rem + 4vw, 6.5rem); line-height: 0.85; color: var(--c-copper); }
 .lot-card dl { display: grid; grid-template-columns: auto 1fr; gap: 0.55rem 1.5rem; margin-block: var(--sp-3); font-size: var(--fs-sm); }
 .lot-card dt { color: var(--c-muted); }
 .lot-card dd { color: var(--c-ink); font-weight: 600; }
@@ -402,7 +392,7 @@ main > section:not(.hero):not(.figures) { content-visibility: auto; contain-intr
 .place-intro__card { background: var(--c-cream); padding: var(--sp-5) var(--gutter); max-width: 46rem; }
 .place-facts { display: grid; gap: var(--sp-5); margin-top: var(--sp-6); }
 .place-fact h3 { margin-bottom: 0.6rem; }
-.place-fact__k { font-family: var(--f-display); font-weight: 300; font-size: 3rem; line-height: 1; color: var(--c-clay); display: block; margin-bottom: 0.4rem; }
+.place-fact__k { font-family: var(--f-display); font-weight: 400; font-size: 3rem; line-height: 1; color: var(--c-clay); display: block; margin-bottom: 0.4rem; }
 @media (min-width: 760px) {
     .place-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-6) var(--sp-5); }
     .place-fact:nth-child(even) { transform: translateY(var(--sp-6)); }
@@ -441,7 +431,7 @@ main > section:not(.hero):not(.figures) { content-visibility: auto; contain-intr
 
 /* ---------- 9. Village ---------- */
 .village { display: grid; gap: var(--sp-5); align-items: center; }
-.village__year { margin-top: var(--sp-4); font-family: var(--f-display); font-weight: 300; font-size: clamp(6rem, 3rem + 14vw, 15rem); line-height: 0.8; color: var(--c-copper); letter-spacing: -0.04em; }
+.village__year { margin-top: var(--sp-4); font-family: var(--f-display); font-weight: 400; font-size: clamp(6rem, 3rem + 14vw, 15rem); line-height: 0.8; color: var(--c-copper); letter-spacing: -0.04em; }
 .village__year span { display: block; font-family: var(--f-sans); font-size: var(--fs-xs); font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--c-muted); margin-top: var(--sp-3); }
 .village__facts { list-style: none; display: grid; gap: var(--sp-2); margin-top: var(--sp-4); }
 .village__facts li { font-family: var(--f-display); font-size: clamp(1.15rem, 1rem + 0.6vw, 1.45rem); color: var(--c-ink); line-height: 1.35; }
@@ -471,7 +461,7 @@ main > section:not(.hero):not(.figures) { content-visibility: auto; contain-intr
 .party p { font-family: var(--f-display); font-size: 1.25rem; color: var(--c-ink); line-height: 1.3; }
 .buy-steps { list-style: none; display: grid; gap: 0; counter-reset: buy; }
 .buy-steps li { counter-increment: buy; display: grid; grid-template-columns: 4.5rem 1fr; gap: 0 var(--sp-2); padding-block: var(--sp-3); }
-.buy-steps li::before { content: counter(buy, decimal-leading-zero); font-family: var(--f-display); font-weight: 300; font-size: 2.6rem; line-height: 1; color: var(--c-clay); }
+.buy-steps li::before { content: counter(buy, decimal-leading-zero); font-family: var(--f-display); font-weight: 400; font-size: 2.6rem; line-height: 1; color: var(--c-clay); }
 .buy-steps h3 { font-size: 1.3rem; margin-bottom: 0.3rem; }
 .buy-steps p { font-size: var(--fs-sm); }
 .buy-steps li:nth-child(odd) { background: linear-gradient(90deg, rgba(251, 248, 243, 0.8), rgba(251, 248, 243, 0)); padding-inline: 1rem; margin-inline: -1rem; }
@@ -551,7 +541,7 @@ fieldset.field { border: 0; }
 
 /* ---------- Pages annexes ---------- */
 .page-hero { padding-block: clamp(3rem, 2rem + 5vw, 7rem) clamp(2rem, 1.5rem + 3vw, 4rem); background: var(--g-warm); }
-.page-hero h1 { font-size: clamp(2.2rem, 1.5rem + 3.4vw, 4.4rem); font-weight: 300; max-width: 18ch; }
+.page-hero h1 { font-size: clamp(2.2rem, 1.5rem + 3.4vw, 4.4rem); font-weight: 400; max-width: 18ch; }
 .page-hero p { margin-top: var(--sp-3); }
 .breadcrumb { font-size: var(--fs-xs); letter-spacing: 0.08em; color: var(--c-muted); margin-bottom: var(--sp-4); }
 .breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; }

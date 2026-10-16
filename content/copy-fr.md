@@ -32,13 +32,11 @@ Distances par la route depuis le terrain : calcul OpenStreetMap (OSRM), arrondie
 
 Sur-titre : U zapomenutého sadu · Au verger oublié
 
-# Maisons neuves et terrains à bâtir à Dřetovice, à 15 minutes de Prague
+# Maisons neuves et terrains à bâtir à Dřetovice
+## (même H1, seconde ligne plus petite) à 15 minutes de Prague
 `{cz: Nové rodinné domy a stavební pozemky v Dřetovicích, 15 minut od Prahy}`
 
-7 terrains en bordure d'un verger protégé. Sur chacun, une maison d'environ 150 m² dessinée par un architecte pour ce terrain.
-
-Bouton : Être informé en priorité
-Lien secondaire : Voir l'avancement
+7 terrains en bordure d'un verger protégé. Sur chacun, une maison d'environ 150 m² dessinée par un architecte.
 
 Légende photo : Le terrain en avril, vu depuis le verger. Au fond, le village et l'église Saint-Venceslas.
 
