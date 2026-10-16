@@ -66,13 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initNav();
     renderTimeline();
     initPlan();
-    initFacade('map-load', 'map', (btn) => {
-        const f = document.createElement('iframe');
-        f.src = btn.dataset.src;
-        f.title = 'Carte Mapy.com : emplacement du projet à Dřetovice';
-        f.loading = 'lazy';
-        return f;
-    });
     initFacade('video-load', 'video-player', (btn) => {
         const f = document.createElement('iframe');
         f.src = `https://www.youtube-nocookie.com/embed/${btn.dataset.id}?autoplay=1&rel=0`;

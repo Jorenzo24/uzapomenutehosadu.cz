@@ -170,7 +170,7 @@ Distances par la route :
 - Kladno centre : 11 km
 - Kralupy nad Vltavou : 14 km
 
-Carte : Mapy.com. Lien : Ouvrir dans Mapy.com
+Carte : Mapy.com, affichée directement. Lien : Ouvrir dans Mapy.com
 
 ---
 
