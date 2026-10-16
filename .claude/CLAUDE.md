@@ -22,9 +22,10 @@ Cliente : Katerina. Nom de société inconnu (« La Maison du Bonheur » est son
 - `prefers-reduced-motion` respecté pour toute animation.
 
 ## Langues
-- Dev en français à la racine. Final : tchèque à `/`, anglais à `/en/`, français éventuellement à `/fr/`.
+- Dev en français à la racine. Final (validé par la cliente le 13/10/2026) : tchèque à `/`, anglais à `/en/`, français à `/fr/`, russe à `/ru/`.
+- Police Geist : `geist-latin.woff2` (latin + tchèque) et `geist-cyrillic.woff2` (russe, chargé via unicode-range). Ne pas choisir de police sans cyrillique.
 - Tout le texte est centralisé dans `content/copy-fr.md` (source de traduction).
-- hreflang cs / en / x-default à poser lors de la traduction.
+- hreflang cs / en / fr / ru / x-default à poser lors de la traduction.
 - `noindex` sur la version française de dev, à retirer à la mise en ligne tchèque.
 
 ## Contraintes de contenu (non négociables)

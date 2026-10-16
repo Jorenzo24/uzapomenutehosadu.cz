@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Ajouter les balises xhtml:link hreflang (cs, en, x-default) à la mise en ligne des traductions -->
+  <!-- Ajouter les balises xhtml:link hreflang (cs, en, fr, ru, x-default) à la mise en ligne des traductions -->
   <url>
     <loc>https://uzapomenutehosadu.cz/</loc>
     <lastmod>2026-10-07</lastmod>
