@@ -248,8 +248,9 @@ main > section:not(.hero):not(.figures) { content-visibility: auto; contain-intr
 @media (min-width: 960px) {
     .hero { display: block; }
     .hero__media { height: min(100svh, 56rem); min-height: 38rem; }
-    .hero__inner { position: absolute; left: 0; right: 0; bottom: 0; padding-inline: var(--gutter); }
-    .hero__card { display: inline-block; max-width: 27rem; padding: 1.9rem 2.1rem 2.1rem; background: rgba(80, 58, 43, 0.82); }
+    /* Bloc collé au bord gauche de l'écran, centré verticalement sur la photo */
+    .hero__inner { position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: auto; max-width: none; margin: 0; padding: 0; }
+    .hero__card { display: block; max-width: 30rem; padding: 2.1rem 2.2rem 2.2rem clamp(2rem, 1rem + 2.5vw, 3.5rem); background: rgba(80, 58, 43, 0.82); }
     .hero__caption { display: block; top: auto; bottom: 1.25rem; }
 }
 
