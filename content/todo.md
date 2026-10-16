@@ -15,4 +15,4 @@
 - [ ] Versions finales : tchèque à `/`, anglais à `/en/`, français à `/fr/` (le français de dev devient définitif), russe à `/ru/`.
 - [ ] hreflang cs, en, fr, ru et x-default sur toutes les pages + sitemap avec `xhtml:link`.
 - [ ] Sélecteur de langue du footer : CZ · EN · FR · RU.
-- [ ] Version russe : vérifier le rendu de `geist-cyrillic.woff2` et les longueurs de texte (le russe est plus long).
+- [ ] Version russe : vérifier le rendu de `jost-cyrillic.woff2` et les longueurs de texte (le russe est plus long).

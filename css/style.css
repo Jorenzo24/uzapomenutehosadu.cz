@@ -4,19 +4,19 @@
    se distinguent par leur fond et leur composition.
    ========================================================= */
 
-/* ---------- Police : Nunito Sans (proche d'Avenir), variable 300-700, 2 fichiers woff2 ----------
-   nunito-sans-latin : latin + tchèque. nunito-sans-cyrillic : chargé seulement si la page contient du cyrillique (version russe). */
+/* ---------- Police : Jost (géométrique, esprit Futura), variable 300-700, 2 fichiers woff2 ----------
+   jost-latin : latin + tchèque. jost-cyrillic : chargé seulement si la page contient du cyrillique (version russe). */
 @font-face {
-    font-family: "Nunito Sans";
-    src: url("../assets/fonts/nunito-sans-latin.woff2") format("woff2");
+    font-family: "Jost";
+    src: url("../assets/fonts/jost-latin.woff2") format("woff2");
     font-weight: 300 700;
     font-style: normal;
     font-display: optional;
     unicode-range: U+0020-007E, U+00A0-00FF, U+0100-017F, U+2010-2027, U+2030-203A, U+20AC, U+2122, U+2190-2193, U+2212;
 }
 @font-face {
-    font-family: "Nunito Sans";
-    src: url("../assets/fonts/nunito-sans-cyrillic.woff2") format("woff2");
+    font-family: "Jost";
+    src: url("../assets/fonts/jost-cyrillic.woff2") format("woff2");
     font-weight: 300 700;
     font-style: normal;
     font-display: optional;
@@ -52,12 +52,12 @@
     --g-dawn: linear-gradient(135deg, #f3e6d6 0%, #ead7c1 55%, #e2cdb2 100%);
 
     /* Typo */
-    --f-display: "Nunito Sans", "Avenir Next", Avenir, "Segoe UI", system-ui, sans-serif;
-    --f-sans: "Nunito Sans", "Avenir Next", Avenir, "Segoe UI", system-ui, sans-serif;
+    --f-display: "Jost", "Futura", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+    --f-sans: "Jost", "Futura", "Avenir Next", "Segoe UI", system-ui, sans-serif;
 
-    --fs-xs: 0.78rem;
-    --fs-sm: 0.9rem;
-    --fs-base: 1.0625rem;
+    --fs-xs: 0.82rem;
+    --fs-sm: 0.98rem;
+    --fs-base: 1.125rem;
     --fs-lg: clamp(1.15rem, 1rem + 0.5vw, 1.35rem);
     --fs-h3: clamp(1.3rem, 1.1rem + 0.8vw, 1.7rem);
     --fs-h2: clamp(2rem, 1.4rem + 2.6vw, 3.6rem);
@@ -115,10 +115,10 @@ ul[role="list"], ol[role="list"] { list-style: none; }
 /* ---------- Typo ---------- */
 h1, h2, h3, .serif {
     font-family: var(--f-display);
-    font-weight: 600;
+    font-weight: 500;
     color: var(--c-ink);
     line-height: 1.08;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.015em;
     text-wrap: balance;
 }
 h2 { font-size: var(--fs-h2); }
@@ -241,8 +241,8 @@ main > section:not(.hero):not(.figures) { content-visibility: auto; contain-intr
 .hero__card { background: rgba(80, 58, 43, 0.97); padding: 1.75rem var(--gutter) 2rem; }
 .hero__kicker { font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.9rem; color: rgba(251, 248, 243, 0.78); }
 .hero__kicker em { font-style: normal; text-transform: none; letter-spacing: 0; font-size: 1.15em; font-weight: 600; }
-.hero h1 { color: var(--c-paper); font-size: var(--fs-h1); font-weight: 600; letter-spacing: -0.02em; }
-.hero h1 span { display: block; margin-top: 0.45rem; font-size: 0.56em; font-weight: 600; letter-spacing: 0; color: #ecc9a6; }
+.hero h1 { color: var(--c-paper); font-size: var(--fs-h1); font-weight: 500; letter-spacing: -0.01em; }
+.hero h1 span { display: block; margin-top: 0.45rem; font-size: 0.56em; font-weight: 500; letter-spacing: 0; color: #ecc9a6; }
 .hero__sub { margin-top: 0.9rem; font-size: var(--fs-sm); line-height: 1.55; color: rgba(251, 248, 243, 0.88); max-width: 26rem; }
 .hero__caption { position: absolute; right: var(--gutter); top: 5.5rem; z-index: 2; font-size: var(--fs-xs); color: #fff; max-width: 18rem; text-align: right; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.55); display: none; }
 @media (min-width: 960px) {
